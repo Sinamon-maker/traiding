@@ -1,7 +1,7 @@
 /* Resources Section */
 .resources-section {
   width: 100%;
-  background: #ffff; /* Dark blue background */
+  background-color: #ffff; /* Dark blue background */
 }
 
 .resources-section h1 {
@@ -11,6 +11,8 @@
 }
 
 .resources-grid {
+  display: -webkit-grid;
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
@@ -18,10 +20,16 @@
 }
 
 .resource-category {
-  background: #f6f6f6; /* Darker blue for category cards */
+  background-color: #f6f6f6; /* Darker blue for category cards */
   border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -35,6 +43,8 @@
 .resource-category ul {
   list-style: none;
   padding: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   gap: 8px;

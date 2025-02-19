@@ -14,13 +14,19 @@
 
 .path-card {
   background-color: #f6f6f6;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   border-radius: 10px;
   padding: 20px;
   margin: 20px auto;
+  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
   text-align: left;
   width: 100%;
   max-width: 800px; /* Smaller width */
+  -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   transform-style: preserve-3d;
   display: flex;
@@ -30,6 +36,8 @@
 }
 
 .path-card:hover {
+  -webkit-transform: scale(1.05) translateZ(10px);
+  -moz-transform: scale(1.05) translateZ(10px);
   transform: scale(1.05) translateZ(10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
@@ -47,6 +55,8 @@
   margin-left: 10px;
   margin-top: 0;
   margin-top: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -124,6 +134,8 @@
 
 .stats-grid {
   background: #f6f6f6;
+  display: -webkit-grid;
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, auto);
@@ -187,6 +199,8 @@
 }
 
 .testimonials-grid {
+  display: -webkit-grid;
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;

@@ -6,7 +6,9 @@
 .faq-item {
   padding: 20px;
   margin-bottom: 40px;
-  background: #f6f6f6; /* Dark blue background */
+  background-color: #f6f6f6; /* Dark blue background */
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -16,6 +18,8 @@
   align-self: center;
 }
 .faq-item .faq-item-content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   gap: 12px;
