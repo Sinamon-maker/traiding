@@ -13,23 +13,31 @@
 }
 
 .path-card {
-  background: #fff; /* White background */
-
+  background-color: #f6f6f6;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   border-radius: 10px;
   padding: 20px;
   margin: 20px auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
   text-align: left;
   width: 100%;
   max-width: 800px; /* Smaller width */
+  -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   transform-style: preserve-3d;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  gap: 10px;
 }
 
 .path-card:hover {
+  -webkit-transform: scale(1.05) translateZ(10px);
+  -moz-transform: scale(1.05) translateZ(10px);
   transform: scale(1.05) translateZ(10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
@@ -38,21 +46,30 @@
   margin-bottom: 20px;
   color: rgb(39, 39, 39); /* Dark text */
   align-self: center;
+  text-align: center;
 }
 
 .path-card ul {
   list-style: none;
   padding: 0;
+  margin-left: 10px;
+  margin-top: 0;
+  margin-top: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .path-card ul li {
-  margin-bottom: 15px;
-  color: rgb(39, 39, 39); /* Dark text */
+  color: rgb(0, 174, 239); /* Dark text */
 }
 .path-card li:before {
   content: "✔"; /* Символ галочки */
   margin-right: 4px; /* Расстояние между галочкой и текстом */
-  color: #001276;
+  color: rgb(0, 174, 239);
+  opacity: 0.6;
 }
 
 .path-card .btn {
@@ -76,14 +93,12 @@
     margin-bottom: 30px;
   }
   .path-card {
-    border: 4px solid rgb(0, 174, 239);
+    border: 2px solid rgb(0, 174, 239);
     margin: 40px auto;
   }
 
   .path-card li:before {
-    content: "✔"; /* Символ галочки */
-    margin-right: 10px; /* Расстояние между галочкой и текстом */
-    color: #001276;
+    margin-right: 2px; /* Расстояние между галочкой и текстом */
   }
 }
 
@@ -119,6 +134,8 @@
 
 .stats-grid {
   background: #f6f6f6;
+  display: -webkit-grid;
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, auto);
@@ -182,6 +199,8 @@
 }
 
 .testimonials-grid {
+  display: -webkit-grid;
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
@@ -193,6 +212,25 @@
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.testimonial-card .testimonial-heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.testimonial-card .testimonial-content {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .testimonial-card img {
@@ -208,7 +246,6 @@
 
 .testimonial-card p {
   font-size: 1.6rem;
-  margin-bottom: 15px;
   color: #001276;
 }
 
@@ -217,7 +254,6 @@
 }
 
 .testimonial-card .btn {
-  margin-top: 20px;
 }
 
 /* Next Big Crypto Move Section */
@@ -225,8 +261,8 @@
   padding-top: 40px;
   padding-bottom: 40px;
   background: rgb(246, 246, 246); /* Gray background */
-  text-align: center;
   width: 100%;
+  text-align: center;
 }
 
 .next-move h2 {
@@ -256,16 +292,14 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 10px;
 }
 
 .next-move .event-card h3 {
-  margin-bottom: 15px;
   color: rgb(39, 39, 39); /* Dark text */
 }
 
 .next-move .event-card p {
-  font-size: 1.6rem;
-  margin-bottom: 15px;
 }
 
 .next-move .event-card .highlight {
@@ -288,6 +322,7 @@
   content: "✔"; /* Символ галочки */
   margin-right: 4px; /* Расстояние между галочкой и текстом */
   color: #001276;
+  opacity: 0.6;
 }
 
 .next-move .event-card .btn {
@@ -296,9 +331,6 @@
   width: fit-content;
 }
 
-.next-move .ready p {
-  margin-bottom: 12px;
-}
 .next-move .ready {
   margin-top: 15px;
 
@@ -312,12 +344,16 @@
   gap: 12px;
   margin-bottom: 30px;
 }
+.next-move .ready p {
+}
 
 .next-move .ready ul {
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin-left: 15px;
+  margin-bottom: 0;
+  margin-top: 0;
   color: #001276;
 }
 
@@ -325,6 +361,7 @@
   content: "✔"; /* Символ галочки */
   margin-right: 4px; /* Расстояние между галочкой и текстом */
   color: #001276;
+  opacity: 0.6;
 }
 
 @media (min-width: 768px) {
