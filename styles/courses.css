@@ -32,7 +32,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 10px;
+  gap: 8px;
 }
 
 .path-card:hover {
@@ -54,7 +54,7 @@
   padding: 0;
   margin-left: 10px;
   margin-top: 0;
-  margin-top: 0;
+  margin-bottom: 0;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -63,12 +63,13 @@
 }
 
 .path-card ul li {
-  color: rgb(0, 174, 239); /* Dark text */
+  color: #006de3; /* Dark text */
+  font-weight: 500;
 }
 .path-card li:before {
   content: "✔"; /* Символ галочки */
   margin-right: 4px; /* Расстояние между галочкой и текстом */
-  color: rgb(0, 174, 239);
+  color: #006de3;
   opacity: 0.6;
 }
 
@@ -274,6 +275,8 @@
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -288,15 +291,35 @@
   margin: 20px auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: left;
-  max-width: 800px; /* Smaller width */
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
   gap: 10px;
 }
 
 .next-move .event-card h3 {
   color: rgb(39, 39, 39); /* Dark text */
+  align-self: center;
+}
+
+.next-move .event-card-content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.next-move .event-card-image {
+  display: none;
+  width: 30%;
+  height: 100%;
+}
+.next-move .event-card-image img {
+  width: 100%;
+  height: 100%;
 }
 
 .next-move .event-card p {
@@ -368,7 +391,13 @@
   .next-move h2 {
     margin-bottom: 40px;
   }
+  .next-move .event-card {
+    max-width: 1200px;
+  }
 
+  .next-move .event-card-image {
+    display: block;
+  }
   .next-move .event-card li:before {
     margin-right: 8px; /* Расстояние между галочкой и текстом */
   }
@@ -378,7 +407,10 @@
   }
 }
 
-@media (min-width: 1200) {
+@media (min-width: 1440) {
+  .next-move .event-card {
+    max-width: 1400px;
+  }
   .next-move .event-card li:before {
     margin-right: 10px; /* Расстояние между галочкой и текстом */
   }
