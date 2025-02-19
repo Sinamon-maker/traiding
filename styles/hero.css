@@ -43,6 +43,7 @@
 .hero h1 {
   margin-bottom: 20px;
   color: #fff; /* White for headline */
+  align-self: center;
 }
 
 .hero p {
