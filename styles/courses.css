@@ -136,6 +136,9 @@
     width: 600px;
     max-width: 600px; /* Adjust width */
   }
+  .path-card:nth-child(3) .path-card-heading {
+    background-color: rgb(0, 174, 239);
+  }
 
   .path-card li:before {
     margin-right: 2px; /* Расстояние между галочкой и текстом */
@@ -298,7 +301,6 @@
 
 .testimonial-card p {
   font-size: 1.6rem;
-  color: #001276;
 }
 
 .testimonial-card .highlight {
