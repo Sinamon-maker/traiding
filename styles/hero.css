@@ -36,12 +36,12 @@
   display: -ms-flexbox;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   gap: 15px;
 }
 
 .hero h1 {
-  margin-bottom: 20px;
   color: #fff; /* White for headline */
   align-self: center;
 }
@@ -64,12 +64,20 @@
 }
 @media (min-width: 768px) {
   .hero {
+    height: 760px;
     margin-top: 40px;
+    flex-direction: row;
+  }
+  .hero .image {
+    height: 100%;
   }
 
   .hero .text {
     gap: 20px;
     padding: 30px;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
   }
 }
 @media (min-width: 1200px) {

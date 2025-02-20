@@ -14,8 +14,7 @@ body {
   font-size: 1.4rem;
   line-height: 1.6;
   margin: 0;
-  padding: 0;
-  color: rgb(39, 39, 39); /* Dark text for light background */
+  color: #333; /* Dark text for light background */
   background: #fff; /* White background */
   width: 100%;
   display: flex;
@@ -27,12 +26,14 @@ body {
 @media (min-width: 768px) {
   body {
     font-size: 1.6rem;
+    line-height: 1.7;
   }
 }
 
 @media (min-width: 1200px) {
   body {
     font-size: 1.8rem;
+    line-height: 1.8;
   }
 }
 
@@ -187,7 +188,7 @@ li {
 
 .btn {
   display: inline-block;
-  padding: 6px 10px;
+  padding: 6px 16px;
   background: #fff; /* White background */
   color: #006de3; /* Blue text */
   border: 2px solid #006de3; /* Blue border */
@@ -205,14 +206,16 @@ li {
 
 @media (min-width: 768px) {
   .btn {
-    padding: 15px 30px;
+    padding: 12px 20px;
+    width: fit-content;
+    font-size: 2rem;
     width: fit-content;
   }
 }
 @media (min-width: 1200px) {
   .btn {
-    font-size: 1.8rem;
-    padding: 15px 30px;
+    font-size: 2.2rem;
+    padding: 15px 20px;
   }
 }
 

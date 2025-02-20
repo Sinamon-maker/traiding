@@ -1,7 +1,7 @@
 /* Choose Your Path Section */
 .choose-path {
   padding: 30px 0;
-  background: rgb(246, 246, 246); /* Gray background */
+
   text-align: center;
   width: 100%;
 }
@@ -15,12 +15,12 @@
 .choose-path-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 26px;
+  row-gap: 20px;
+  column-gap: 0;
 }
 
 .path-card {
   background-color: #f6f6f6;
-
   padding-bottom: 20px;
   -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
   -moz-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
@@ -102,8 +102,8 @@
 }
 
 .path-card .btn {
-  width: fit-content;
-  align-self: center;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 @media (min-width: 768px) {
@@ -120,11 +120,12 @@
     padding-left: 20px;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
     grid-template-rows: auto auto; /* Two rows */
+    row-gap: 30px;
   }
   .path-card {
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
     border: 2px solid rgb(0, 174, 239);
     max-width: 500px;
     gap: 14px;
@@ -143,11 +144,20 @@
   .path-card li:before {
     margin-right: 2px; /* Расстояние между галочкой и текстом */
   }
+
+  .path-card .btn {
+    margin-left: 0;
+    margin-right: 0;
+    width: fit-content;
+    align-self: center;
+  }
 }
 
 @media (min-width: 1200px) {
   .choose-path {
     padding: 60px 0;
+    row-gap: 0;
+    column-gap: 20px;
   }
   .choose-path h2 {
     margin-bottom: 40px;
@@ -155,9 +165,7 @@
   .choose-path-grid {
     padding: 0;
   }
-  .path-card {
-    gap: 20px;
-  }
+
   .path-card:hover {
     -webkit-transform: scale(1.02) translateZ(10px);
     -moz-transform: scale(1.02) translateZ(10px);
@@ -315,8 +323,12 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .tes .testimonials h2 {
+  .testimonials h2 {
     margin-bottom: 30px;
+  }
+  .testimonial-card .btn {
+    width: fit-content;
+    align-self: center;
   }
 }
 @media (min-width: 1200px) {
@@ -333,7 +345,6 @@
 .next-move {
   padding-top: 40px;
   padding-bottom: 40px;
-  background: rgb(246, 246, 246); /* Gray background */
   width: 100%;
   text-align: center;
 }
@@ -356,24 +367,33 @@
   margin-bottom: 30px;
 }
 
-.next-move .event-card {
-  background: #fff; /* White background */
+.next-move .next-move-cards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  margin-bottom: 20px;
+}
 
+.event-card {
+  background: #f6f6f6; /* White background */
   padding: 30px;
-  margin: 20px auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: left;
   width: 100%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+  width: 100%;
 }
 
 .next-move .event-card h3 {
   color: rgb(39, 39, 39); /* Dark text */
   align-self: center;
+  text-align: center;
 }
 
 .next-move .event-card-content {
@@ -402,6 +422,8 @@
 }
 
 .next-move .event-card ul {
+  margin-top: 0;
+  margin-bottom: 0;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -422,8 +444,7 @@
 
 .next-move .event-card .btn {
   margin-top: 20px;
-  align-self: center;
-  width: fit-content;
+  width: 100%;
 }
 
 .next-move .ready {
@@ -463,11 +484,14 @@
   .next-move h2 {
     margin-bottom: 40px;
   }
+
   .next-move .event-card {
     max-width: 1200px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
+    width: 800px;
+    align-self: center;
   }
 
   .next-move .event-card-image {
@@ -480,12 +504,19 @@
   .next-move .ready ul li:before {
     margin-right: 8px; /* Расстояние между галочкой и текстом */
   }
+
+  .next-move .event-card .btn {
+    width: fit-content;
+    align-self: center;
+  }
 }
 
-@media (min-width: 1440) {
+@media (min-width: 1200px) {
   .next-move .event-card {
     max-width: 1400px;
+    width: 900px;
   }
+
   .next-move .event-card li:before {
     margin-right: 10px; /* Расстояние между галочкой и текстом */
   }
@@ -501,7 +532,13 @@
 /* Contact Us Section */
 .contact-us {
   padding: 20px 4px;
-  /* background: rgb(246, 246, 246); Gray background */
+  background: rgb(246, 246, 246); /* Gray background */
+
+  width: 100%;
+  border-bottom: 2px solid #d8d7d7;
+}
+
+.contact-us .contact-us-content {
   text-align: center;
   display: flex;
   flex-direction: column;
