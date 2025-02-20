@@ -12,13 +12,16 @@
   word-break: break-all;
 }
 
+.choose-path-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 26px;
+}
+
 .path-card {
   background-color: #f6f6f6;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px auto;
+
+  padding-bottom: 20px;
   -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
   -moz-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
@@ -29,22 +32,47 @@
   -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   transform-style: preserve-3d;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  justify-self: center;
+  overflow: hidden;
+}
+
+.path-card .path-card-heading {
+  background-color: #006de3;
+  width: 100%;
+  height: 90px;
+  padding: 8px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.path-card:nth-child(3) .path-card-heading {
+  height: 100px;
+}
+
+.path-card .path-card-content {
+  padding-right: 20px;
+  padding-left: 20px;
+  flex: 1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 8px;
-}
-
-.path-card:hover {
-  -webkit-transform: scale(1.05) translateZ(10px);
-  -moz-transform: scale(1.05) translateZ(10px);
-  transform: scale(1.05) translateZ(10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  justify-self: center;
 }
 
 .path-card h3 {
-  margin-bottom: 20px;
-  color: rgb(39, 39, 39); /* Dark text */
+  color: #fff; /* Dark text */
   align-self: center;
   text-align: center;
 }
@@ -74,28 +102,39 @@
 }
 
 .path-card .btn {
-  margin-top: 20px;
-  color: #ffff;
-  background-color: #006de3;
   width: fit-content;
   align-self: center;
-}
-
-.path-card .btn:hover {
-  color: #006de3;
-  background-color: #fff;
 }
 
 @media (min-width: 768px) {
   .choose-path {
     padding: 40px 0;
   }
+
   .choose-path h2 {
     margin-bottom: 30px;
   }
+
+  .choose-path-grid {
+    padding-left: 20px;
+    padding-left: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-rows: auto auto; /* Two rows */
+  }
   .path-card {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
     border: 2px solid rgb(0, 174, 239);
-    margin: 40px auto;
+    max-width: 500px;
+    gap: 14px;
+  }
+
+  .path-card:nth-child(3) {
+    grid-column: span 2; /* Center the third card */
+    justify-self: center; /* Center horizontally */
+    width: 600px;
+    max-width: 600px; /* Adjust width */
   }
 
   .path-card li:before {
@@ -110,19 +149,31 @@
   .choose-path h2 {
     margin-bottom: 40px;
   }
+  .choose-path-grid {
+    padding: 0;
+  }
+  .path-card {
+    gap: 20px;
+  }
+  .path-card:hover {
+    -webkit-transform: scale(1.02) translateZ(10px);
+    -moz-transform: scale(1.02) translateZ(10px);
+    transform: scale(1.05) translateZ(10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
 }
 
 /* Testimonials Section */
 .testimonials {
   text-align: center;
   background: #fff; /* White background */
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 100%;
 }
 
 .testimonials h2 {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: rgb(39, 39, 39); /* Dark text */
 }
 
@@ -257,6 +308,25 @@
 .testimonial-card .btn {
 }
 
+@media (min-width: 769px) {
+  .testimonials {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .tes .testimonials h2 {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .testimonials {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .testimonials h2 {
+    margin-bottom: 40px;
+  }
+}
+
 /* Next Big Crypto Move Section */
 .next-move {
   padding-top: 40px;
@@ -286,7 +356,7 @@
 
 .next-move .event-card {
   background: #fff; /* White background */
-  border-radius: 10px;
+
   padding: 30px;
   margin: 20px auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -393,6 +463,9 @@
   }
   .next-move .event-card {
     max-width: 1200px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
   }
 
   .next-move .event-card-image {
