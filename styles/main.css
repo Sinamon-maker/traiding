@@ -14,8 +14,7 @@ body {
   font-size: 1.4rem;
   line-height: 1.6;
   margin: 0;
-  padding: 0;
-  color: rgb(39, 39, 39); /* Dark text for light background */
+  color: #333; /* Dark text for light background */
   background: #fff; /* White background */
   width: 100%;
   display: flex;
@@ -27,12 +26,14 @@ body {
 @media (min-width: 768px) {
   body {
     font-size: 1.6rem;
+    line-height: 1.7;
   }
 }
 
 @media (min-width: 1200px) {
   body {
     font-size: 1.8rem;
+    line-height: 1.8;
   }
 }
 
@@ -119,11 +120,11 @@ h5 {
     font-size: 2.6rem;
     font-family: 700;
   }
-  h3 {
+  h4 {
     font-size: 2rem;
     font-weight: 700;
   }
-  h4 {
+  h5 {
     font-size: 2rem;
     line-height: 1.2;
     font-weight: 600;
@@ -187,10 +188,10 @@ li {
 
 .btn {
   display: inline-block;
-  padding: 6px 10px;
+  padding: 6px 16px;
   background: #fff; /* White background */
-  color: #006de3; /* Blue text */
-  border: 2px solid #006de3; /* Blue border */
+  color: rgb(0, 18, 118); /* Blue text */
+  border: 2px solid rgb(0, 18, 118); /* Blue border */
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
@@ -205,19 +206,21 @@ li {
 
 @media (min-width: 768px) {
   .btn {
-    padding: 15px 30px;
+    padding: 10px 20px;
+    width: fit-content;
+    font-size: 2rem;
     width: fit-content;
   }
 }
 @media (min-width: 1200px) {
   .btn {
-    font-size: 1.8rem;
-    padding: 15px 30px;
+    font-size: 2.2rem;
+    padding: 10px 20px;
   }
 }
 
 .btn:hover {
-  background: #006de3; /* Blue background on hover */
+  background-color: rgb(0, 18, 118); /* Blue background on hover */
   color: #fff; /* White text on hover */
 }
 
@@ -256,22 +259,11 @@ header .logo span {
   color: #006de3; /* Blue for logo */
 }
 
-@media (min-width: 768px) {
-  header .logo span {
-    font-size: 2rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  header .logo span {
-    font-size: 2.5rem;
-  }
-}
 header .logo .logo-icon {
   width: 40px;
   height: 40px;
 }
-
+/* Burger-menu */
 header .nav-burger {
   position: relative;
 }
@@ -370,7 +362,11 @@ header .burger span:last-child {
 header .nav-links {
   display: none;
 }
+
 @media (min-width: 768px) {
+  header .logo span {
+    font-size: 2rem;
+  }
   header .nav-links {
     display: flex;
     gap: 20px;
@@ -382,13 +378,21 @@ header .nav-links {
     color: #006de3; /* Blue for nav links */
     font-weight: 500;
   }
-
+  header .nav-links a {
+    font-weight: 500;
+  }
   header .nav-links a:hover {
     color: rgb(0, 18, 118); /* Darker blue on hover */
   }
 
   header .nav-links .active-link {
     color: rgb(0, 18, 118); /* Darker blue on hover */
+  }
+}
+
+@media (min-width: 1200px) {
+  header .logo span {
+    font-size: 2.5rem;
   }
 }
 
