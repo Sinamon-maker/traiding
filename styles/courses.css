@@ -121,6 +121,7 @@
     grid-template-columns: repeat(2, 1fr); /* Two columns */
     grid-template-rows: auto auto; /* Two rows */
     row-gap: 30px;
+    column-gap: 10px;
   }
   .path-card {
     -webkit-border-radius: 12px;
