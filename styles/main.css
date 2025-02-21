@@ -44,7 +44,7 @@ body {
 /* Headings */
 h1 {
   margin: 0;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   line-height: 1.5;
   font-weight: 700;
   text-align: center;
@@ -141,11 +141,13 @@ strong,
 p {
   margin: 0;
   color: rgb(39, 39, 39); /* Dark text */
+  letter-spacing: 0.02rem;
 }
 
 a {
   text-decoration: none;
   color: #006de3; /* Blue for links */
+  letter-spacing: 0.02rem;
 }
 a,
 button {

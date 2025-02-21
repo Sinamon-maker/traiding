@@ -1,7 +1,7 @@
 /* Hero Section with Background Image */
 
 .hero--secrets-highlight {
-  color: #ffd230; /* Lighter shade of blue for highlights */
+  color: #fff; /* Lighter shade of blue for highlights */
   font-weight: bold;
   font-size: 1.8rem;
 }
@@ -27,6 +27,8 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 15px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .hero-secrets h1 {
@@ -41,6 +43,8 @@
   line-height: 1.9;
   text-indent: 10px;
   color: #fff;
+  max-width: 800px;
+  align-self: center;
 }
 
 .hero-secrets .btn {
@@ -83,7 +87,7 @@
 
   .hero-secrets-text {
     gap: 20px;
-    padding: 30px;
+    padding: 70px;
   }
 
   .hero-section-images {

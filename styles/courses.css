@@ -18,7 +18,7 @@
   row-gap: 20px;
   column-gap: 0;
   padding-left: 10px;
-  padding-right: 0px;
+  padding-right: 10px;
 }
 
 .path-card {
@@ -51,8 +51,7 @@
 .path-card .path-card-heading {
   background-color: #006de3;
   width: 100%;
-  height: 90px;
-  padding: 8px;
+  padding: 20px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -141,6 +140,10 @@
   .path-card {
     max-width: 500px;
     gap: 14px;
+  }
+
+  .path-card-heading {
+    padding-bottom: 30px;
   }
 
   .path-card:nth-child(3) {
@@ -474,27 +477,27 @@
   opacity: 0.6;
 }
 
-.next-move .event-card .btn {
-  margin-top: 20px;
-  width: 100%;
-}
 .next-move h4 {
   text-align: center;
 }
 
 .next-move .ready {
   margin-top: 15px;
-
   width: 100%;
   padding-left: 30px;
   padding-right: 30px;
-
   display: flex;
   flex-direction: column;
-
   gap: 12px;
   margin-bottom: 30px;
 }
+
+.next-move .event-card .btn {
+  margin-top: 20px;
+  width: 100%;
+  align-self: center;
+}
+
 .next-move .ready p {
   text-indent: 20px;
 }
