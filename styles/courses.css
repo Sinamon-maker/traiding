@@ -89,10 +89,14 @@
   flex-direction: column;
   gap: 10px;
 }
+.path-card p {
+  font-size: 1.6rem;
+}
 
 .path-card ul li {
   color: #006de3; /* Dark text */
   font-weight: 500;
+  font-size: 1.4rem;
 }
 .path-card li:before {
   content: "✔"; /* Символ галочки */
@@ -176,12 +180,20 @@
 }
 
 /* Testimonials Section */
+
+.testimonial-highlight {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
 .testimonials {
-  text-align: center;
   background: #fff; /* White background */
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .testimonials h2 {
@@ -275,7 +287,6 @@
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -293,8 +304,11 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+
   gap: 10px;
+}
+
+.testimonial-card .testimonial-footer {
 }
 
 .testimonial-card img {
@@ -308,12 +322,14 @@
   margin-bottom: 10px;
 }
 
-.testimonial-card p {
+.testimonial-card .testimonial-text {
   font-size: 1.6rem;
+  text-indent: 20px;
 }
 
 .testimonial-card .highlight {
   color: #006de3; /* Lighter shade of blue for highlights */
+  font-size: 1.2;
 }
 
 .testimonial-card .btn {
@@ -347,25 +363,29 @@
   padding-top: 40px;
   padding-bottom: 40px;
   width: 100%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .next-move h2 {
-  margin-bottom: 20px;
   color: rgb(39, 39, 39); /* Dark text */
+  text-align: center;
 }
 .next-move .next-move-text {
   width: 100%;
   padding-left: 30px;
   padding-right: 30px;
-  text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 12px;
-  margin-bottom: 30px;
+}
+
+.next-move-subtitle {
+  text-indent: 20px;
 }
 
 .next-move .next-move-cards {
@@ -447,6 +467,9 @@
   margin-top: 20px;
   width: 100%;
 }
+.next-move h4 {
+  text-align: center;
+}
 
 .next-move .ready {
   margin-top: 15px;
@@ -454,14 +477,15 @@
   width: 100%;
   padding-left: 30px;
   padding-right: 30px;
-  text-align: center;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   gap: 12px;
   margin-bottom: 30px;
 }
 .next-move .ready p {
+  text-indent: 20px;
 }
 
 .next-move .ready ul {
@@ -483,7 +507,7 @@
 
 @media (min-width: 768px) {
   .next-move h2 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .next-move .event-card {

@@ -1,4 +1,11 @@
 /* Hero Section with Background Image */
+
+.hero--secrets-highlight {
+  color: #ffd230; /* Lighter shade of blue for highlights */
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
 .hero-secrets {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -23,12 +30,16 @@
 }
 
 .hero-secrets h1 {
-  margin-bottom: 20px;
-  color: #fff; /* White for headline */
+  margin-bottom: 8px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #f8fafc; /* White for headline */
 }
 
 .hero-secrets p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  line-height: 1.9;
+  text-indent: 10px;
   color: #fff;
 }
 
@@ -66,11 +77,11 @@
 
 @media (min-width: 768px) {
   .hero-secrets {
-    margin-top: 40px;
+    padding: 20px;
     margin-bottom: 40px;
   }
 
-  .hero-secrets .text {
+  .hero-secrets-text {
     gap: 20px;
     padding: 30px;
   }
@@ -90,5 +101,9 @@
 @media (min-width: 1200px) {
   .hero-secrets .text {
     padding: 40px;
+  }
+
+  .hero-secrets p {
+    font-size: 1.8rem;
   }
 }

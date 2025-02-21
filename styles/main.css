@@ -9,7 +9,7 @@ html {
 }
 body {
   -webkit-font-smoothing: antialiased; /*for better font rendering on macOS*/
-  font-family: "Lato", serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-size: 1.4rem;
   line-height: 1.6;
@@ -45,7 +45,7 @@ body {
 h1 {
   margin: 0;
   font-size: 3.2rem;
-  line-height: 1.6;
+  line-height: 1.5;
   font-weight: 700;
   text-align: center;
   color: rgb(39, 39, 39); /* Dark text */
@@ -139,13 +139,11 @@ strong,
 }
 
 p {
-  letter-spacing: -0.025rem;
   margin: 0;
   color: rgb(39, 39, 39); /* Dark text */
 }
 
 a {
-  letter-spacing: -0.025rem;
   text-decoration: none;
   color: #006de3; /* Blue for links */
 }
