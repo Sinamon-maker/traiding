@@ -17,9 +17,15 @@
   grid-template-columns: 1fr;
   row-gap: 20px;
   column-gap: 0;
+  padding-left: 10px;
+  padding-right: 0px;
 }
 
 .path-card {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+
   background-color: #f6f6f6;
   padding-bottom: 20px;
   -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
@@ -69,6 +75,11 @@
   justify-content: flex-start;
   gap: 8px;
   justify-self: center;
+}
+
+.path-card-content strong {
+  font-weight: 600;
+  color: #272727;
 }
 
 .path-card h3 {
@@ -128,10 +139,6 @@
     column-gap: 10px;
   }
   .path-card {
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-    border: 2px solid rgb(0, 174, 239);
     max-width: 500px;
     gap: 14px;
   }
@@ -383,6 +390,10 @@
   justify-content: center;
   gap: 12px;
 }
+.next-move strong {
+  font-weight: 600;
+  color: #272727;
+}
 
 .next-move-subtitle {
   text-indent: 20px;
@@ -459,7 +470,7 @@
 .next-move .event-card li:before {
   content: "✔"; /* Символ галочки */
   margin-right: 4px; /* Расстояние между галочкой и текстом */
-  color: #001276;
+
   opacity: 0.6;
 }
 
@@ -495,13 +506,11 @@
   margin-left: 15px;
   margin-bottom: 0;
   margin-top: 0;
-  color: #001276;
 }
 
 .next-move .ready ul li:before {
   content: "✔"; /* Символ галочки */
   margin-right: 4px; /* Расстояние между галочкой и текстом */
-  color: #001276;
   opacity: 0.6;
 }
 
