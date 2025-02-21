@@ -25,8 +25,7 @@
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   border-radius: 12px;
-
-  background-color: #f6f6f6;
+  background-color: #ffff;
   padding-bottom: 20px;
   -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
   -moz-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
@@ -64,8 +63,8 @@
 }
 
 .path-card .path-card-content {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
   flex: 1;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -122,7 +121,10 @@
 
 @media (min-width: 768px) {
   .choose-path {
-    padding: 40px 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 40px;
   }
 
   .choose-path h2 {
@@ -564,6 +566,7 @@
 
 .next-move .ready .btn {
   margin-top: 20px;
+  align-self: center;
 }
 
 /* Contact Us Section */
