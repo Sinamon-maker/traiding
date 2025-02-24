@@ -20,6 +20,10 @@
   gap: 20px;
 }
 
+.faq-subtitle {
+  text-align: center;
+}
+
 .accordion-heading {
   display: flex;
   align-items: flex-start;
