@@ -372,7 +372,7 @@
   display: -webkit-grid;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  width: 100%;
   gap: 20px;
 }
 
@@ -426,21 +426,6 @@
   font-size: 1.2;
 }
 
-.testimonials-carousel-container {
-  display: flex;
-  align-items: center;
-  position: relative;
-  width: 90%;
-  max-width: 900px;
-
-  overflow: hidden;
-}
-
-.testimonials-carousel {
-  overflow: hidden;
-  width: 100%;
-}
-
 .testimonials-cards {
   display: flex;
   gap: 15px; /* Adds space between cards */
@@ -449,6 +434,16 @@
 
 .testimonial-card {
   min-width: 300px;
+}
+
+@media (min-width: 768px) {
+  .testimonials-grid {
+    display: -webkit-grid;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+  }
 }
 
 /* Navigation Buttons */
