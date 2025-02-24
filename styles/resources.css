@@ -1,5 +1,6 @@
 /* Resources Section */
 .resources-root {
+  width: 100%;
   display: flex;
   height: 100%;
   flex-direction: column;
@@ -13,7 +14,9 @@
   flex-direction: column;
   align-items: center;
 }
-
+.resources-list {
+  width: 100%;
+}
 .resources-section h1 {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -22,6 +25,7 @@
 .resources-subtitle {
   text-align: center;
   margin-bottom: 20px;
+  max-width: 90%;
 }
 .resources-grid {
   display: -webkit-grid;
