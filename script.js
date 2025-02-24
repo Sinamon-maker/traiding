@@ -14,7 +14,7 @@ function show(event) {
 }
 
 $(document).ready(function () {
-  if (window.location.pathname === "/faqs.html") {
+  if (window.location.pathname.endsWith("faqs.html")) {
     $(".accordion-header").click(function () {
       var target = $(this).data("target"); // Get the ID of the target content
       var content = $(target);
