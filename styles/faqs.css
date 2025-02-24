@@ -3,6 +3,7 @@
   display: flex;
   height: 100%;
   flex-direction: column;
+  align-items: center;
 }
 .faq-heading {
   margin-top: 10px;
@@ -13,7 +14,61 @@
   flex-direction: column;
   gap: 20px;
 }
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
 
+.accordion-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.accordion-content {
+  display: none;
+}
+
+.accordion-btn {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #001276; /* Button color */
+  border-radius: 50%; /* Makes the button round */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+.accordion-btn::before,
+.accordion-btn::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+}
+
+.accordion-btn::before {
+  width: 2px; /* Thickness of the horizontal line */
+  height: 50%; /* Length of the horizontal line */
+}
+
+.accordion-btn::after {
+  width: 50%; /* Length of the vertical line */
+  height: 2px; /* Thickness of the vertical line */
+}
+.accordion-btn-text {
+  color: #001276;
+  text-decoration: underline;
+  margin-right: 4px;
+}
+.accordion-btn-arrow {
+  color: #001276;
+  display: inline-block;
+  transform: rotate(225deg);
+}
 .faq-highlight {
   font-size: 1.2rem;
   font-weight: 600;
@@ -84,6 +139,7 @@
     padding: 40px 0;
     gap: 40px;
   }
+
   .faq-highlight {
     font-size: 1.6rem;
   }
@@ -94,5 +150,26 @@
 
   .faq-item .btn {
     width: fit-content;
+  }
+  @media (min-width: 1200px) {
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .faq-grid .faq-item {
+      width: 460px;
+    }
+    .faq-grid .faq-item:last-child {
+      grid-column: span 2; /* Center the third card */
+      justify-self: center; /* Center horizontally */
+    }
+  }
+
+  @media (min-width: 1200px) {
+  }
+  .faq-grid .faq-item {
+    width: 520px;
   }
 }

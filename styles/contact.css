@@ -1,0 +1,63 @@
+/* Contact Us Section */
+.contact-us {
+  padding: 20px 4px;
+  background: rgb(246, 246, 246); /* Gray background */
+
+  width: 100%;
+  border-bottom: 2px solid #d8d7d7;
+}
+
+.contact-us .contact-us-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us h2 {
+  margin-bottom: 20px;
+  color: rgb(39, 39, 39); /* Dark text */
+}
+
+.contact-us p {
+  margin-bottom: 10px;
+  color: rgb(39, 39, 39); /* Dark text */
+  word-wrap: break-word;
+}
+
+.contact-us .access-links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.contact-us .telegramm {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #006de3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+}
+
+.contact-us .telegramm-img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+.contact-us .telegramm svg {
+  color: #fff;
+}
+.contact-us .btn {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .contact-us p {
+    margin-bottom: 20px;
+  }
+  .contact-us .btn {
+    margin-top: 20px;
+  }
+}

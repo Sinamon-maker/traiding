@@ -13,37 +13,22 @@ function show(event) {
   }
 }
 
-const prevBtn = document.querySelector(".prev-btn");
-const nextBtn = document.querySelector(".next-btn");
-const cards = document.querySelector(".testimonials-cards");
-let index = 0;
+$(document).ready(function () {
+  if (window.location.pathname === "/faqs.html") {
+    $(".accordion-header").click(function () {
+      var target = $(this).data("target"); // Get the ID of the target content
+      var content = $(target);
 
-function updateCarousel() {
-  const cardWidth =
-    document.querySelector(".testimonial-card").offsetWidth + 10; // Card width + gap
-  cards.style.transform = `translateX(-${index * cardWidth}px)`;
-}
+      if (content.is(":visible")) {
+        content.slideUp();
+        $(this).removeClass("active");
+      } else {
+        $(".accordion-content").slideUp(); // Hide all contents
+        $(".accordion-header").removeClass("active");
 
-nextBtn.addEventListener("click", () => {
-  if (
-    index <
-    cards.children.length -
-      Math.floor(
-        window.innerWidth /
-          document.querySelector(".testimonial-card").offsetWidth
-      )
-  ) {
-    index++;
-    updateCarousel();
+        content.slideDown(); // Show clicked content
+        $(this).addClass("active");
+      }
+    });
   }
 });
-
-prevBtn.addEventListener("click", () => {
-  if (index > 0) {
-    index--;
-    updateCarousel();
-  }
-});
-
-// Update on window resize
-window.addEventListener("resize", updateCarousel);
