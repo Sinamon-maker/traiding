@@ -186,6 +186,12 @@ li {
   }
 }
 
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1260px;
+  }
+}
+
 .btn {
   display: inline-block;
   padding: 6px 16px;
@@ -295,9 +301,10 @@ header .nav-burger .burger-menu {
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
   -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
   -moz-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
-  padding: 10px;
-  width: 140px;
-  left: -100px;
+  padding: 20px;
+  width: 200px;
+  left: -160px;
+  top: 45px;
   height: 0;
   opacity: 0;
   transition: all 0.3s ease-in-out;
@@ -315,6 +322,10 @@ header .nav-burger .burger-menu a {
   color: #006de3; /* Blue for nav links */
   font-weight: 500;
   font-size: 1.6rem;
+}
+
+header .nav-burger .burger-menu a:first-child {
+  font-weight: 600;
 }
 
 header .burger span {
@@ -370,6 +381,7 @@ header .nav-links {
   header .nav-links {
     display: flex;
     gap: 20px;
+    align-items: center;
   }
   header .nav-burger {
     display: none;
@@ -378,8 +390,15 @@ header .nav-links {
     color: #006de3; /* Blue for nav links */
     font-weight: 500;
   }
-  header .nav-links a {
-    font-weight: 500;
+  header .nav-links a:last-child {
+    border: 2px solid #006de3;
+    padding: 5px 8px;
+    border-radius: 20px;
+  }
+
+  header .nav-links a:last-child:hover {
+    color: #fff;
+    background-color: #006de3;
   }
   header .nav-links a:hover {
     color: rgb(0, 18, 118); /* Darker blue on hover */

@@ -4,15 +4,19 @@
   height: 100%;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
 }
 
 /* Hero. Section */
 .hero-course {
-  margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
   display: flex;
   height: 400px;
+  background-color: #001276;
+  background-image: url("../assets/images/3d-plexus-background.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-course-img {
@@ -26,7 +30,6 @@
   gap: 40px;
   justify-content: center;
   align-items: center;
-  background-color: #001276;
 }
 
 .hero-course-text h1 {
@@ -34,6 +37,7 @@
 }
 .hero-course-text p {
   max-width: 80%;
+  color: #ffff;
 }
 .hero-course-img img {
   width: 100%;
@@ -42,17 +46,32 @@
 
 @media (min-width: 768px) {
   .hero-course {
-    margin-top: 40px;
-    margin-bottom: 40px;
     height: 500px;
+    padding-left: 50px;
+    padding-top: 50px;
   }
   .hero-course-text {
-    width: 50%;
+    width: 600px;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
   .hero-course-img {
     display: block;
     width: 50%;
     height: 100%;
+  }
+
+  .hero-course-text h1 {
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-course {
+    padding-left: 60px;
+  }
+  .hero-course-text {
+    width: 700px;
   }
 }
 
@@ -177,6 +196,12 @@
   margin-right: 20px;
 }
 
+@media (min-width: 442px) {
+  .path-card {
+    width: 440px;
+  }
+}
+
 @media (min-width: 768px) {
   .choose-path {
     padding-left: 0;
@@ -189,32 +214,14 @@
     margin-bottom: 30px;
   }
 
-  .choose-path-grid {
-    padding-left: 20px;
-    padding-left: 20px;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    grid-template-rows: auto auto; /* Two rows */
-    row-gap: 30px;
-    column-gap: 10px;
-  }
   .path-card {
-    width: 500px;
+    width: 400px;
     max-width: 500px;
     gap: 14px;
   }
 
   .path-card-heading {
     padding-bottom: 30px;
-  }
-
-  .path-card:nth-child(3) {
-    grid-column: span 2; /* Center the third card */
-    justify-self: center; /* Center horizontally */
-    width: 500px;
-    max-width: 600px; /* Adjust width */
-  }
-  .path-card:nth-child(3) .path-card-heading {
-    background-color: rgb(0, 174, 239);
   }
 
   .path-card li:before {
@@ -226,6 +233,29 @@
     margin-right: 10px;
     width: fit-content;
     align-self: center;
+  }
+}
+
+@media (min-width: 884px) {
+  .choose-path-grid {
+    padding-left: 20px;
+    padding-left: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-rows: auto auto; /* Two rows */
+    row-gap: 30px;
+    column-gap: 10px;
+  }
+  .path-card {
+    width: 440px;
+  }
+  .path-card:nth-child(3) {
+    grid-column: span 2; /* Center the third card */
+    justify-self: center; /* Center horizontally */
+    width: 500px;
+    max-width: 600px; /* Adjust width */
+  }
+  .path-card:nth-child(3) .path-card-heading {
+    background-color: rgb(0, 174, 239);
   }
 }
 
@@ -402,6 +432,83 @@
   font-size: 1.2;
 }
 
+.testimonials-carousel-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+
+  overflow: hidden;
+}
+
+.testimonials-carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.testimonials-cards {
+  display: flex;
+  gap: 15px; /* Adds space between cards */
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-card {
+  min-width: 300px;
+}
+
+/* Navigation Buttons */
+.prev-btn,
+.next-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Fixing buttons outside issue */
+.prev-btn {
+  left: 5px;
+}
+.next-btn {
+  right: 5px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: #0056b3;
+}
+
+/* --- MEDIA QUERIES FOR LARGER SCREENS --- */
+@media (min-width: 600px) {
+  .testimonial-card {
+    min-width: 48%; /* Show 2 cards on tablets */
+  }
+}
+
+@media (min-width: 900px) {
+  .testimonial-card {
+    min-width: 32%; /* Show 3 cards on desktops */
+  }
+}
+
+@media (min-width: 1200px) {
+  .testimonial-card {
+    min-width: 24%; /* Show 4 cards on large screens */
+  }
+}
+
 @media (min-width: 769px) {
   .testimonials {
     padding-top: 30px;
@@ -492,6 +599,10 @@
   color: #ffff;
 }
 
+.why-us-features p {
+  color: #fff;
+}
+
 .why-us-features .why-us-img {
   width: 200px;
   height: 40px;
@@ -554,6 +665,7 @@
 .next-move h2 {
   color: rgb(39, 39, 39); /* Dark text */
   text-align: center;
+  max-width: 90%;
 }
 .next-move .next-move-text {
   width: 100%;
