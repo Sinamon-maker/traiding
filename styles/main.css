@@ -12,7 +12,7 @@ body {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-size: 1.4rem;
-  line-height: 1.6;
+  line-height: 1.5;
   margin: 0;
   color: #333; /* Dark text for light background */
   background: #fff; /* White background */
@@ -26,14 +26,12 @@ body {
 @media (min-width: 768px) {
   body {
     font-size: 1.6rem;
-    line-height: 1.7;
   }
 }
 
 @media (min-width: 1200px) {
   body {
     font-size: 1.8rem;
-    line-height: 1.8;
   }
 }
 
@@ -167,6 +165,7 @@ button {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 li {
@@ -256,7 +255,6 @@ header .logo {
   display: -ms-flexbox;
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 header .logo span {
@@ -374,7 +372,7 @@ header .nav-links {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 870px) {
   header .logo span {
     font-size: 2rem;
   }
@@ -410,8 +408,14 @@ header .nav-links {
 }
 
 @media (min-width: 1200px) {
+  header .logo {
+    gap: 10px;
+  }
   header .logo span {
     font-size: 2.5rem;
+  }
+  header .nav-links {
+    gap: 20px;
   }
 }
 
