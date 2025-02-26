@@ -8,7 +8,7 @@
 }
 
 .foundation-heading {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .foundation-subtitle {
@@ -73,6 +73,14 @@
 @media (min-width: 768px) {
   .crypyo-topics .container {
     width: 90%;
+  }
+
+  .foundation-heading {
+    margin-top: 40px;
+  }
+
+  .crypyo-topics {
+    margin-bottom: 40px;
   }
   .crypyo-topics-grid {
     display: -webkit-grid;
