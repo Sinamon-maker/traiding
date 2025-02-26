@@ -239,6 +239,22 @@ li {
   font-weight: 600;
 }
 
+.section {
+  width: 100%;
+}
+
+.section .container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .section .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 /* Header */
 header {
   position: -webkit-sticky;
