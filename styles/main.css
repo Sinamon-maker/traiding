@@ -170,7 +170,11 @@ li {
 .container {
   width: 100%;
 }
-
+section {
+  margin: 0;
+  padding: 0;
+  scroll-margin-top: 72px;
+}
 @media (min-width: 768px) {
   .container {
     width: 90%;
@@ -230,7 +234,7 @@ li {
 }
 
 .start-flex span:first-child {
-  margin-right: 10px;
+  margin-right: 6px;
 }
 
 /* Emphasized Text */
