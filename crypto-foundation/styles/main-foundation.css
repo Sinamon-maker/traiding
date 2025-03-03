@@ -359,7 +359,7 @@
 
 /* Web3 */
 .section-web-title {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 .section-web-title:not(:first-child) {
   margin-top: 20px;
@@ -374,6 +374,15 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .section-web-title:not(:first-child) {
+    margin-top: 40px;
+  }
+  .section-web-title {
+    margin-bottom: 30px;
+  }
 }
 
 /* cryptocurrencies */
@@ -402,6 +411,10 @@
 
 /* myths */
 
+.myths:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .myths-title {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -421,6 +434,10 @@
 }
 
 @media (min-width: 768px) {
+  .myths:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
   .myths-title {
     margin-top: 30px;
     margin-bottom: 20px;
