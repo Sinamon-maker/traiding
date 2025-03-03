@@ -12,7 +12,7 @@ body {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-size: 1.4rem;
-  line-height: 1.6;
+  line-height: 1.5;
   margin: 0;
   color: #333; /* Dark text for light background */
   background: #fff; /* White background */
@@ -26,14 +26,12 @@ body {
 @media (min-width: 768px) {
   body {
     font-size: 1.6rem;
-    line-height: 1.7;
   }
 }
 
 @media (min-width: 1200px) {
   body {
     font-size: 1.8rem;
-    line-height: 1.8;
   }
 }
 
@@ -111,7 +109,8 @@ h5 {
 
 @media (min-width: 1200px) {
   h1 {
-    font-size: 3rem;
+    font-size: 4.2rem;
+    line-height: 1.2;
   }
   h2 {
     font-size: 3rem;
@@ -129,13 +128,6 @@ h5 {
     line-height: 1.2;
     font-weight: 600;
   }
-}
-
-/* Emphasized Text */
-strong,
-.highlight {
-  color: #006de3; /* Lighter shade of blue for highlights */
-  font-weight: bold;
 }
 
 p {
@@ -167,6 +159,7 @@ button {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 li {
@@ -177,7 +170,11 @@ li {
 .container {
   width: 100%;
 }
-
+section {
+  margin: 0;
+  padding: 0;
+  scroll-margin-top: 72px;
+}
 @media (min-width: 768px) {
   .container {
     width: 90%;
@@ -230,6 +227,38 @@ li {
   color: #fff; /* White text on hover */
 }
 
+/* This class for ul lists with two spans */
+.start-flex {
+  display: flex;
+  align-items: flex-start;
+}
+
+.start-flex span:first-child {
+  margin-right: 6px;
+}
+
+/* Emphasized Text */
+
+.highlight {
+  font-weight: 600;
+}
+
+.section {
+  width: 100%;
+}
+
+.section .container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .section .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 /* Header */
 header {
   position: -webkit-sticky;
@@ -256,7 +285,6 @@ header .logo {
   display: -ms-flexbox;
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 header .logo span {
@@ -374,7 +402,7 @@ header .nav-links {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 870px) {
   header .logo span {
     font-size: 2rem;
   }
@@ -410,8 +438,14 @@ header .nav-links {
 }
 
 @media (min-width: 1200px) {
+  header .logo {
+    gap: 10px;
+  }
   header .logo span {
     font-size: 2.5rem;
+  }
+  header .nav-links {
+    gap: 20px;
   }
 }
 
