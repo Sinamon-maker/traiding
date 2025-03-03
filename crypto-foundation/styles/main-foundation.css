@@ -8,7 +8,6 @@
 }
 
 .foundation-crypto-title {
-  margin-top: 10px;
 }
 
 .foundation-crypto-subtitle {
@@ -17,11 +16,16 @@
   max-width: 90%;
 }
 
+/* Subheader */
+
 .subheader {
+  background-color: #ffff;
   padding: 8px 15px;
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  position: sticky;
+  top: 70px;
 }
 
 .subheader a {
@@ -33,6 +37,12 @@
 }
 .subheader a span:first-child {
   margin-right: 6px;
+}
+
+@media (min-width: 768px) {
+  .subheader {
+    position: static;
+  }
 }
 
 /* Allow to navigate on oage without section hiding behind header */
@@ -101,6 +111,9 @@
   }
 }
 /* h2, h3 title and p below them */
+
+.title-1 {
+}
 
 .title-2 {
   margin-bottom: 10px;
@@ -175,7 +188,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -185,17 +198,15 @@
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .security-wrapper {
   width: 100%;
-  padding: 20px;
+  padding: 10px;
 }
 .security-part {
   width: 100%;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -226,6 +237,9 @@
 }
 
 @media (min-width: 768px) {
+  .security-content {
+    gap: 20px;
+  }
   .security-compare {
     flex-direction: row;
     margin-top: 20px;
@@ -242,6 +256,10 @@
   .security-part {
     height: 100%;
     padding-right: 10px;
+  }
+
+  .security-part .learn-path-list-4 {
+    flex: 1;
   }
   .security-part-one {
     border-right: 2px solid #001276;
@@ -375,8 +393,8 @@
   }
 
   .cryptocurrency .title-4 {
-    margin-top: 16px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 16px;
   }
 }
 @media (min-width: 1200px) {
@@ -438,21 +456,9 @@
   margin-top: 10px;
 }
 
-.blockchain ul {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 20px;
-  margin-left: 10px;
-}
-
 @media (min-width: 768px) {
   .blockchain-subtitle {
     margin-top: 20px;
-  }
-
-  .blockchain ul {
-    margin-left: 20px;
   }
 }
 
@@ -471,12 +477,8 @@
   color: crimson;
 }
 
-.consensus ul {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-
-  margin-left: 10px;
+.consensus:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .consensus-list-item {
@@ -502,6 +504,9 @@
   padding-bottom: 10px;
 }
 @media (min-width: 768px) {
+  .consensus:not(:last-child) {
+    margin-bottom: 40px;
+  }
   .consensus ul {
     margin-left: 20px;
   }
@@ -530,21 +535,28 @@
 }
 
 /* meme coins, tokens */
-.meme ul {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+.meme:not(:last-child) {
+  margin-bottom: 10px;
 }
-@media (min-width: 1200px) {
-  .meme ul {
-    margin-bottom: 30px;
+.meme-last-subtitle {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .meme-last-subtitle {
+    margin-top: 20px;
+  }
+  .meme:not(:last-child) {
+    margin-bottom: 20px;
   }
 }
 
+@media (min-width: 1200px) {
+  .meme-last-subtitle {
+    margin-top: 30px;
+  }
+}
 /* Integration */
 
 .integration-last-subtitle {
