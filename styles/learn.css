@@ -1,3 +1,5 @@
+@import url("variables.css");
+
 .foundation-root {
   width: 100%;
   display: flex;
@@ -35,7 +37,10 @@
 }
 .crypto-topic-card {
   padding: 20px;
-  background-color: #f6f6f6;
+  background-color: var(--secondary-color);
+  -webkit-box-shadow: 0 4px 12px 0 rgba(237, 241, 245, 1);
+  -moz-box-shadow: 0 4px 12px 0 rgba(237, 241, 245, 1);
+  box-shadow: 0 4px 12px 0 rgba(237, 241, 245, 1);
   border-radius: 20px;
   display: flex;
   flex-direction: column;

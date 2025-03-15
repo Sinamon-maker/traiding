@@ -16,7 +16,7 @@ body {
   font-size: 1.4rem;
   line-height: 1.5;
   margin: 0;
-  color: #333; /* Dark text for light background */
+  color: var(--text-color-dark); /* Dark text for light background */
   background: #fff; /* White background */
   width: 100%;
   display: flex;
@@ -194,9 +194,9 @@ section {
 .btn {
   display: inline-block;
   padding: 6px 16px;
-  background-color: var(--primary-color); /* White background */
+  background-color: var(--accent-color); /* White background */
   color: var(--text-color-light); /* Blue text */
-  border: 2px solid var(--primary-color); /* Blue border */
+  border: 2px solid var(--accent-color); /* Blue border */
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
@@ -207,6 +207,12 @@ section {
   -webkit-transition: background 0.3s ease, color 0.3s ease;
   -moz-transition: background 0.3s ease, color 0.3s ease;
   transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-accent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 @media (min-width: 768px) {

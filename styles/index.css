@@ -16,7 +16,7 @@
   display: flex;
   height: 400px;
   background-color: #001276;
-  background-image: url("../assets/images/closeup-business-man-working-with-diagram.jpg");
+  background-image: url("../assets/images/background_image.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -35,11 +35,11 @@
 }
 
 .hero-course-text h1 {
-  color: #fff;
+  color: var(--text-color-light);
 }
 .hero-course-text p {
   max-width: 80%;
-  color: #ffff;
+  color: var(--text-color-light);
 }
 .hero-course-img img {
   width: 100%;
@@ -68,11 +68,73 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .hero-course {
-    padding-left: 60px;
+    padding-top: 182px;
+    padding-left: 90px;
+    height: 750px;
   }
   .hero-course-text {
+    width: 700px;
+  }
+}
+
+/* Trust Section */
+.trust {
+  width: 100%;
+}
+
+.trust-hero {
+  width: 100%;
+  height: 300px;
+  background-color: var(--background-color);
+  background-image: url("../assets/images/trust-background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.trust-hero-text {
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.trust-hero-text h1 {
+  color: var(--text-color-light);
+}
+.trust-hero-text p {
+  max-width: 80%;
+  color: var(--text-color-light);
+}
+
+@media (min-width: 768px) {
+  .trust-hero {
+    height: 500px;
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+  .trust-hero-text {
+    width: 600px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .trust-hero-text h1 {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .trust-hero {
+    padding-top: 182px;
+    padding-left: 90px;
+    height: 750px;
+  }
+  .trust-hero-text {
     width: 700px;
   }
 }

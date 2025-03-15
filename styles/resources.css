@@ -41,7 +41,7 @@
 }
 
 .resource-category {
-  background-color: var(--secondary-color); /* Darker blue for category cards */
+  background-color: var(--secondary-color);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;

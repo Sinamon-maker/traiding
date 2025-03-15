@@ -2,8 +2,8 @@
 :root {
   --primary-color: #006de3;
   --secondary-color: #ffffff;
-  --accent-color: #0daa75;
+  --accent-color: rgba(41, 176, 137, 1);
   --background-color: #001276;
   --text-color-light: #f8f9fa;
-  --text-color-dark: #333333;
+  --text-color-dark: rgba(0, 3, 19, 1);
 }
