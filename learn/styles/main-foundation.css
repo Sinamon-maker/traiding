@@ -396,6 +396,14 @@
   margin-bottom: 10px;
 }
 
+.cryptocurrency-subtitle-first {
+  margin-bottom: 10px;
+}
+
+.cryptocurrency-subtitle-last {
+  margin-top: 14px;
+}
+
 @media (min-width: 768px) {
   .cryptocurrency:not(:last-child) {
     margin-bottom: 30px;
@@ -404,6 +412,14 @@
   .cryptocurrency .title-4 {
     margin-top: 20px;
     margin-bottom: 16px;
+  }
+
+  .cryptocurrency-subtitle-first {
+    margin-bottom: 16px;
+  }
+
+  .cryptocurrency-subtitle-last {
+    margin-top: 20px;
   }
 }
 @media (min-width: 1200px) {
