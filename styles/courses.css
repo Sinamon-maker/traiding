@@ -1,3 +1,5 @@
+@import url("variables.css");
+
 .courses-root {
   width: 100%;
   display: flex;
@@ -14,7 +16,7 @@
   display: flex;
   height: 400px;
   background-color: #001276;
-  background-image: url("../assets/images/3d-plexus-background.jpg");
+  background-image: url("../assets/images/closeup-business-man-working-with-diagram.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -81,35 +83,46 @@
 
   text-align: center;
   width: 100%;
+  background-color: rgba(0, 18, 118, 1);
 }
 
 .choose-path h2 {
   margin-bottom: 20px;
-  color: rgb(39, 39, 39); /* Dark text */
+  color: var(--text-color-light);
   word-break: break-all;
+  margin-top: 20px;
+}
+
+.choose-path-subtitle {
+  color: #fff;
+  margin-bottom: 30px;
 }
 
 .choose-path-grid {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 20px;
   column-gap: 0;
   padding-left: 10px;
   padding-right: 10px;
+  align-items: center;
 }
 
 .path-card {
+  position: relative;
+  align-self: center;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   border-radius: 12px;
   background-color: #ffff;
-  padding-bottom: 20px;
+  padding: 20px;
   -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
   -moz-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
   text-align: left;
   width: 100%;
-  max-width: 800px; /* Smaller width */
+
   -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
   -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -120,28 +133,33 @@
   flex-direction: column;
   justify-content: flex-start;
   gap: 10px;
-  justify-self: center;
+
   overflow: hidden;
 }
 
 .path-card .path-card-heading {
-  background-color: #006de3;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background-color: var(--accent-color);
   width: 100%;
-  padding: 20px;
+  padding-right: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 16px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  gap: 8px;
   justify-content: center;
   align-items: center;
-}
-
-.path-card .path-card-heading p {
+  font-weight: 600;
+  font-size: 1.8rem;
+  width: fit-content;
   color: #fff;
-}
-
-.path-card:nth-child(3) .path-card-heading {
-  height: 100px;
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14);
 }
 
 .path-card .path-card-content {
@@ -155,20 +173,38 @@
   justify-content: flex-start;
   gap: 8px;
   justify-self: center;
+  margin-bottom: 20px;
 }
 
-.path-card-content-subtitle {
-  margin-bottom: 10px;
+.path-card-pricing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
+
+.path-card-pricing span:first-child {
+  margin-right: 10px;
+}
+
+.path-card-pricing span:last-child {
+  text-decoration: line-through;
+  font-weight: 400;
+}
+
 .path-card-content strong {
   font-weight: 600;
   color: #272727;
 }
 
 .path-card h3 {
-  color: #fff; /* Dark text */
+  color: #272727;
   align-self: center;
   text-align: center;
+  margin-top: 10px;
 }
 
 .path-card ul {
@@ -184,33 +220,17 @@
   gap: 14px;
 }
 
-.second-list {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.path-card p {
-  font-size: 1.6rem;
+.path-card ul .start-flex span:first-child {
+  color: var(--accent-color);
 }
 
 .path-card ul li {
-  color: #006de3; /* Dark text */
   font-weight: 500;
-  font-size: 1.4rem;
-}
-.first-list-item p {
-  margin-bottom: 12px;
-}
-
-.path-card .second-list-item:before {
-  content: "✔"; /* Символ галочки */
-  margin-right: 4px; /* Расстояние между галочкой и текстом */
-  color: #006de3;
-  opacity: 0.6;
+  font-size: 1.6rem;
+  line-height: 1.375;
 }
 
 .path-card .btn {
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 @media (min-width: 768px) {
@@ -225,41 +245,17 @@
     margin-bottom: 30px;
   }
 
-  .path-card {
-    width: 700px;
-
-    gap: 14px;
-  }
-
-  .path-card-heading {
-    padding-bottom: 30px;
-  }
-
-  .path-card li:before {
-    margin-right: 2px; /* Расстояние между галочкой и текстом */
-  }
-
   .path-card .btn {
     margin-left: 10px;
     margin-right: 10px;
-    width: fit-content;
-    align-self: center;
   }
-}
 
-@media (min-width: 884px) {
-}
-
-@media (min-width: 1200px) {
   .choose-path {
     row-gap: 0;
     column-gap: 20px;
   }
   .choose-path h2 {
     margin-bottom: 50px;
-  }
-  .choose-path-grid {
-    padding: 0;
   }
 
   .path-card:hover {
@@ -269,24 +265,31 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   }
   .choose-path-grid {
-    padding-left: 20px;
-    padding-left: 20px;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
     grid-template-rows: auto auto; /* Two rows */
     row-gap: 30px;
     column-gap: 10px;
   }
   .path-card {
-    width: 500px;
+    max-width: 500px;
+    min-width: 200px;
+    place-self: center;
   }
   .path-card:nth-child(3) {
     grid-column: span 2; /* Center the third card */
     justify-self: center; /* Center horizontally */
-    width: 600px;
-    max-width: 600px; /* Adjust width */
   }
-  .path-card:nth-child(3) .path-card-heading {
-    background-color: rgb(0, 174, 239);
+}
+
+@media (min-width: 1200px) {
+  .choose-path-grid {
+    grid-template-columns: repeat(3, 1fr); /* Two columns */
+    grid-template-rows: auto auto; /* Two rows */
+    column-gap: 20px;
+  }
+  .path-card:nth-child(3) {
+    grid-column: auto; /* Center the third card */
+    justify-self: center; /* Center horizontally */
   }
 }
 

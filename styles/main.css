@@ -1,3 +1,5 @@
+@import url("variables.css");
+
 /* General Styles */
 html {
   font-size: 62.6%;
@@ -192,9 +194,9 @@ section {
 .btn {
   display: inline-block;
   padding: 6px 16px;
-  background: #fff; /* White background */
-  color: rgb(0, 18, 118); /* Blue text */
-  border: 2px solid rgb(0, 18, 118); /* Blue border */
+  background-color: var(--primary-color); /* White background */
+  color: var(--text-color-light); /* Blue text */
+  border: 2px solid var(--primary-color); /* Blue border */
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
@@ -210,9 +212,7 @@ section {
 @media (min-width: 768px) {
   .btn {
     padding: 10px 20px;
-    width: fit-content;
     font-size: 2rem;
-    width: fit-content;
   }
 }
 @media (min-width: 1200px) {
@@ -223,8 +223,9 @@ section {
 }
 
 .btn:hover {
-  background-color: rgb(0, 18, 118); /* Blue background on hover */
-  color: #fff; /* White text on hover */
+  box-shadow: 0px 0px 5px var(--accent-color); /* Neon green glow */
+  transform: scale(1.05); /* Slightly enlarges the button */
+  background-color: #0266d0;
 }
 
 /* This class for ul lists with two spans */
