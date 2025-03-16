@@ -231,31 +231,6 @@
   margin-top: 10px; /* Gap between number and description */
 }
 
-.stat-number-1 {
-  grid-column: 1;
-  grid-row: 1;
-} /* First row, first column */
-.stat-number-2 {
-  grid-column: 2;
-  grid-row: 1;
-} /* First row, second column */
-.stat-number-3 {
-  grid-column: 3;
-  grid-row: 1;
-} /* First row, third column */
-.stat-description-1 {
-  grid-column: 1;
-  grid-row: 2;
-} /* Second row, first column */
-.stat-description-2 {
-  grid-column: 2;
-  grid-row: 2;
-} /* Second row, second column */
-.stat-description-3 {
-  grid-column: 3;
-  grid-row: 2;
-} /* Second row, third column */
-
 @media (min-width: 768px) {
   .stats-grid {
     gap: 8px;
@@ -275,10 +250,11 @@
 
   text-align: center;
   width: 100%;
-  background-color: rgba(0, 18, 118, 1);
+  background-color: var(--background-color);
 }
 
 .choose-path h2 {
+  font-size: 5rem;
   margin-bottom: 20px;
   color: var(--text-color-light);
   word-break: break-all;
