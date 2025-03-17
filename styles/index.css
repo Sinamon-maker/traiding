@@ -490,7 +490,6 @@
 /* Money-back risk-free */
 .choose-path-risk {
   width: 100%;
-  margin-top: 20px;
 }
 
 .choose-path-risk h3 {
@@ -517,9 +516,12 @@
 /* Path-card-timer */
 
 .choose-path-footer {
+  margin-top: 40px;
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 .path-card-timer {
   display: flex;
@@ -558,7 +560,7 @@
   color: var(--text-color-light);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .choose-path-footer {
     flex-direction: row;
     justify-content: space-between;

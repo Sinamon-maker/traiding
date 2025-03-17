@@ -238,7 +238,7 @@ section {
 .btn:hover {
   box-shadow: 0px 0px 5px var(--accent-color); /* Neon green glow */
   transform: scale(1.05); /* Slightly enlarges the button */
-  background-color: #0266d0;
+  background-color: rgb(8, 87, 64);
 }
 
 /* This class for ul lists with two spans */
@@ -433,16 +433,10 @@ header .nav-links {
     font-weight: 500;
   }
   header .nav-links a:last-child {
-    border: 2px solid #006de3;
-    padding: 5px 8px;
-    border-radius: 20px;
+    color: var(--text-color-light);
   }
 
-  header .nav-links a:last-child:hover {
-    color: #fff;
-    background-color: #006de3;
-  }
-  header .nav-links a:hover {
+  header .nav-links a:not(:last-child):hover {
     color: rgb(0, 18, 118); /* Darker blue on hover */
   }
 
