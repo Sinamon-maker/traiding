@@ -35,6 +35,13 @@
   width: 100%;
   gap: 20px;
 }
+
+.crypto-topics-big {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 12px;
+}
 .crypto-topic-card {
   padding: 20px;
   background-color: var(--secondary-color);
@@ -47,6 +54,30 @@
   gap: 20px;
 
   place-self: center;
+}
+
+.crypto-topic-cards-small {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.crypto-topic-cards-small .crypto-topic-card {
+  width: 48%;
+}
+
+.crypto-topics-big .crypto-topic-card {
+  width: 100%;
+}
+
+.crypto-topic-card-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.8;
+  background-color: #cfcfcf;
 }
 
 .crypto-topic-card p {
@@ -93,6 +124,24 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+  }
+
+  .crypto-topics-big {
+    flex-direction: row;
+  }
+
+  .crypto-topic-cards-small {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .crypto-topics-big .crypto-topic-card {
+    width: 33.3%;
+  }
+
+  .crypto-topic-cards-small .crypto-topic-card {
+    width: 30%;
   }
 
   .crypto-topic-card {
