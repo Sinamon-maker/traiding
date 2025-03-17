@@ -334,7 +334,7 @@ header .nav-burger .burger-menu {
   position: absolute;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
+  display: none;
   gap: 8px;
   flex-direction: column;
   background-color: #fff;
@@ -356,6 +356,7 @@ header .nav-burger .burger-menu {
 }
 
 header .nav-burger .burger-opened ~ div {
+  display: flex;
   height: auto;
   max-height: 100vh;
   opacity: 1;
