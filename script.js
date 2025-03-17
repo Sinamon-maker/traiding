@@ -13,32 +13,27 @@ function show(event) {
   }
 }
 
-const swiper = new Swiper(".testimonial-swiper", {
-  loop: true,
-  spaceBetween: 20, // space between slides in px
-  slidesPerView: 1, // default
+document.addEventListener("DOMContentLoaded", function () {
+  const swiperContainer = document.querySelector(".testimonial-swiper");
 
-  // Responsive breakpoints
-  breakpoints: {
-    768: {
-      slidesPerView: 2, // show 2 slides when width >= 768px
-    },
-  },
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  navigation: {
-    nextEl: ".my-swiper-button-next",
-    prevEl: ".my-swiper-button-prev",
-  },
-
-  autoplay: {
-    delay: 3000, // autoplay delay in ms
-    disableOnInteraction: false,
-  },
+  if (swiperContainer) {
+    const swiper = new Swiper(".testimonial-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+      },
+      // Optional: custom navigation
+      navigation: {
+        nextEl: ".my-swiper-button-next",
+        prevEl: ".my-swiper-button-prev",
+      },
+    });
+  } else {
+    console.log("Swiper not initialized on this page.");
+  }
 });
 
 $(document).ready(function () {

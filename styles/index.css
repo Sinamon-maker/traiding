@@ -704,6 +704,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 10px;
 }
 
@@ -713,6 +714,7 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 10px;
+  flex-direction: column;
 }
 
 .testimonial-card .testimonial-heading-info {
@@ -739,11 +741,13 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-
+  align-items: flex-start;
+  text-align: left;
   gap: 10px;
 }
 
 .testimonial-card .testimonial-footer {
+  text-align: left;
 }
 
 .testimonial-card img {
@@ -764,78 +768,6 @@
 .testimonial-card .highlight {
   color: #006de3; /* Lighter shade of blue for highlights */
   font-size: 1.2;
-}
-
-.testimonials-cards {
-  display: flex;
-  gap: 15px; /* Adds space between cards */
-  transition: transform 0.5s ease-in-out;
-}
-
-.testimonial-card {
-  min-width: 300px;
-}
-
-@media (min-width: 768px) {
-  .testimonials-grid {
-    display: -webkit-grid;
-    display: -ms-grid;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 20px;
-  }
-}
-
-/* Navigation Buttons */
-.prev-btn,
-.next-btn {
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-  color: white;
-  font-size: 2em;
-  cursor: pointer;
-  padding: 10px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-}
-
-.prev-btn:hover,
-.next-btn:hover {
-  background-color: #0056b3;
-}
-
-/* Fixing buttons outside issue */
-.prev-btn {
-  left: 5px;
-}
-.next-btn {
-  right: 5px;
-}
-
-.prev-btn:hover,
-.next-btn:hover {
-  background-color: #0056b3;
-}
-
-/* --- MEDIA QUERIES FOR LARGER SCREENS --- */
-@media (min-width: 600px) {
-  .testimonial-card {
-    min-width: 48%; /* Show 2 cards on tablets */
-  }
-}
-
-@media (min-width: 900px) {
-  .testimonial-card {
-    min-width: 32%; /* Show 3 cards on desktops */
-  }
-}
-
-@media (min-width: 1200px) {
-  .testimonial-card {
-    min-width: 24%; /* Show 4 cards on large screens */
-  }
 }
 
 @media (min-width: 769px) {
