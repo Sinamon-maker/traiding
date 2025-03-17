@@ -223,11 +223,9 @@
 
 /* Choose Your Path Section */
 .choose-path {
-  padding: 30px 0;
-
   text-align: center;
   width: 100%;
-  background-color: var(--background-color);
+  background-color: rgba(0, 48, 100, 1);
 }
 
 .choose-path .container {
@@ -237,16 +235,23 @@
 }
 
 .choose-path h2 {
-  font-size: 5rem;
+  font-size: 2.8rem;
   margin-bottom: 20px;
   color: var(--text-color-light);
   word-break: break-all;
-  margin-top: 20px;
+  margin-top: 40px;
+  max-width: 90%;
 }
 
 .choose-path-subtitle {
   color: #fff;
   margin-bottom: 30px;
+}
+
+.choose-path-title {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: var(--text-color-light);
 }
 
 .choose-path-grid {
@@ -422,11 +427,17 @@
     padding-left: 0;
     padding-top: 0;
     padding-right: 0;
-    padding-bottom: 40px;
   }
 
   .choose-path h2 {
+    font-size: 4rem;
     margin-bottom: 30px;
+    margin-top: 60px;
+  }
+
+  .choose-path-title {
+    font-size: 4.2rem;
+    margin-bottom: 40px;
   }
 
   .path-card .btn {
@@ -437,9 +448,6 @@
   .choose-path {
     row-gap: 0;
     column-gap: 20px;
-  }
-  .choose-path h2 {
-    margin-bottom: 50px;
   }
 
   .path-card-popular {
@@ -485,6 +493,17 @@
     grid-column: auto; /* Center the third card */
     justify-self: center; /* Center horizontally */
   }
+
+  .choose-path h2 {
+    font-size: 5.6rem;
+    margin-bottom: 30px;
+    margin-top: 100px;
+  }
+
+  .choose-path-title {
+    font-size: 5.6rem;
+    margin-bottom: 60px;
+  }
 }
 
 /* Money-back risk-free */
@@ -516,12 +535,13 @@
 /* Path-card-timer */
 
 .choose-path-footer {
-  margin-top: 40px;
+  margin-top: 60px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
+  margin-bottom: 20px;
 }
 .path-card-timer {
   display: flex;
@@ -541,7 +561,7 @@
   color: var(--text-color-light);
 }
 
-.path-card-timer p {
+.path-card-timer-subtitle {
   margin-bottom: 40px;
   color: var(--text-color-light);
 }
@@ -549,8 +569,12 @@
   display: flex;
   gap: 20px;
 }
-
-.path-card-timer-item span {
+.path-card-timer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.path-card-timer-item .path-card-timer-time span {
   background-color: var(--primary-color);
   border-radius: 8px;
   padding: 8px;
@@ -559,12 +583,15 @@
   font-weight: 800;
   color: var(--text-color-light);
 }
-
+.path-card-timer-comment {
+  color: var(--text-color-light);
+}
 @media (min-width: 1200px) {
   .choose-path-footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    margin-top: 60px;
   }
 }
 /* Trust-Image Section */
@@ -572,10 +599,19 @@
 .trust-image {
   width: 100%;
   height: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 .trust-image-img {
   width: 100%;
   height: 100%;
+}
+
+@media (min-width: 768px) {
+  .trust-image {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
 }
 
 /* Testimonials Section */
@@ -586,18 +622,15 @@
 }
 .testimonials {
   background: #fff; /* White background */
-  padding-top: 20px;
-  padding-bottom: 20px;
+
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  text-align: center;
 }
 
 .testimonials h2 {
   margin-bottom: 20px;
   color: rgb(39, 39, 39); /* Dark text */
+  font-size: 2.8rem;
 }
 
 .testimonials-grid {
@@ -764,11 +797,10 @@
 }
 @media (min-width: 1200px) {
   .testimonials {
-    padding-top: 40px;
-    padding-bottom: 40px;
   }
   .testimonials h2 {
     margin-bottom: 40px;
+    font-size: 5rem;
   }
 }
 
