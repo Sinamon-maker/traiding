@@ -640,6 +640,62 @@
   width: 100%;
   gap: 20px;
 }
+.testimonials-container {
+  position: relative;
+  width: 100%;
+  width: auto; /* or let Swiper manage it */
+  max-width: 100%;
+}
+.swiper {
+  position: relative;
+  width: 80%;
+  padding: 40px 0;
+  overflow: hidden; /* Make sure overflow is hidden */
+}
+
+.swiper-slide {
+  box-sizing: border-box;
+  width: auto; /* or let Swiper manage it */
+  max-width: 100%;
+}
+
+.my-swiper-button-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+
+  top: calc(50% - 60px);
+  left: 25px;
+  width: 20px;
+  height: 60px;
+  z-index: 20;
+}
+
+.my-swiper-button-next {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  top: calc(50% - 60px);
+  right: 30px;
+  width: 20px;
+  height: 60px;
+  z-index: 20;
+}
+
+@media (min-width: 768px) {
+  .my-swiper-button-prev {
+    width: 60px;
+  }
+  .my-swiper-button-next {
+    width: 60px;
+  }
+}
 
 .testimonial-card {
   background: rgb(246, 246, 246); /* Gray background */
@@ -914,7 +970,7 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  background-color: var(--background-color);
+  background-color: #003064;
 }
 
 .next-move h2 {
@@ -951,6 +1007,7 @@
   padding-right: 10px;
   width: 100%;
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .event-card {
@@ -1114,9 +1171,10 @@
 }
 
 .questions h2 {
-  font-size: 5rem;
+  font-size: 2.8rem;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+  margin-top: 40px;
 }
 .questions-content {
   width: 100%;
@@ -1124,6 +1182,8 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .question-title {
@@ -1156,4 +1216,16 @@
   -webkit-box-shadow: 0 4px 12px 0 rgba(237, 241, 245, 1);
   -moz-box-shadow: 0 4px 12px 0 rgba(237, 241, 245, 1);
   box-shadow: 0 4px 12px 0 rgba(237, 241, 245, 1);
+}
+
+@media (min-width: 768px) {
+  .questions h2 {
+    font-size: 5rem;
+    margin-top: 70px;
+    margin-bottom: 60px;
+  }
+  .questions-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
