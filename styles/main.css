@@ -531,10 +531,10 @@ footer {
   margin-bottom: 20px;
 }
 
-.footer-securit ul li {
+.footer-securiy ul li {
   color: var(--text-color-light);
 }
 
-.footer-securit ul li:not(:last-child) {
+.footer-securiy ul li:not(:last-child) {
   margin-bottom: 10px;
 }
