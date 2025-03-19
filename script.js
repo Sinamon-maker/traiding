@@ -30,9 +30,38 @@ document.addEventListener("DOMContentLoaded", function () {
         nextEl: ".my-swiper-button-next",
         prevEl: ".my-swiper-button-prev",
       },
+      on: {
+        init: function () {
+          updateButtons();
+        },
+        slideChange: function () {
+          updateButtons();
+        },
+      },
     });
   } else {
     console.log("Swiper not initialized on this page.");
+  }
+
+  const prevBtn = document.querySelector(".my-swiper-button-prev");
+  const nextBtn = document.querySelector(".my-swiper-button-next");
+
+  function updateButtons() {
+    if (swiper.isBeginning) {
+      prevBtn.disabled = true;
+      prevBtn.classList.add("disabled");
+    } else {
+      prevBtn.disabled = false;
+      prevBtn.classList.remove("disabled");
+    }
+
+    if (swiper.isEnd) {
+      nextBtn.disabled = true;
+      nextBtn.classList.add("disabled");
+    } else {
+      nextBtn.disabled = false;
+      nextBtn.classList.remove("disabled");
+    }
   }
 });
 
