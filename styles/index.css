@@ -1099,13 +1099,13 @@
     margin-bottom: 30px;
   }
   .next-move .event-card {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
 
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-
-    align-self: center;
+    height: 100%;
   }
 
   .next-move .event-card:nth-child(3) {
@@ -1128,7 +1128,6 @@
     grid-template-columns: repeat(3, 1fr);
   }
   .next-move .event-card {
-    width: 350px;
   }
 
   .next-move .event-card:nth-child(3) {
