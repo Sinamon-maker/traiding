@@ -237,7 +237,7 @@ section {
 }
 
 .btn:hover {
-  box-shadow: 0px 0px 5px var(--accent-color); /* Neon green glow */
+  box-shadow: 0px 0px 5px rgb(8, 87, 64); /* Neon green glow */
   transform: scale(1.05); /* Slightly enlarges the button */
   background-color: rgb(8, 87, 64);
 }
@@ -306,6 +306,16 @@ header .logo span {
   font-size: 1.6rem;
   font-weight: bold;
   color: #006de3; /* Blue for logo */
+  background: linear-gradient(
+    90deg,
+    #006de3,
+    #3797ff
+  ); /* You can change colors and direction */
+  -webkit-background-clip: text;
+  background-clip: text; /* Firefox support */
+  -webkit-text-fill-color: transparent;
+  /* Optional for better rendering */
+  display: inline-block;
 }
 
 header .logo .logo-icon {
@@ -468,13 +478,22 @@ footer {
   width: 100%;
 }
 
+.footer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
 .footer-content {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 .footer-contacts-title {
-  color: red;
   background: linear-gradient(
     90deg,
     #006de3,
@@ -531,10 +550,25 @@ footer {
   margin-bottom: 20px;
 }
 
-.footer-securiy ul li {
+.footer-security ul li {
   color: var(--text-color-light);
 }
 
-.footer-securiy ul li:not(:last-child) {
+.footer-security ul li:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.footer-date {
+  color: var(--text-color-light);
+}
+
+.footer-disclaimer {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-disclaimer {
+  max-width: 976px;
+  font-size: 1.2rem;
+  color: #3d5e83;
 }

@@ -33,43 +33,32 @@
 
 .accordion-heading {
   display: flex;
-  align-items: flex-start;
+  background-color: #003064;
+  align-items: center;
   justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
 }
+
+.accordion-heading h3 {
+  color: var(--text-color-light);
+}
+
 .accordion-content {
   display: none;
 }
 
 .accordion-btn {
-  flex-shrink: 0;
-  width: 30px;
-  height: 30px;
-  background-color: #001276; /* Button color */
-  border-radius: 50%; /* Makes the button round */
-  position: relative;
+  width: 36px;
+  height: 36px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
   cursor: pointer;
+  justify-content: center;
+}
+.accordion-btn svg {
+  transform: rotate(135deg);
 }
 
-.accordion-btn::before,
-.accordion-btn::after {
-  content: "";
-  position: absolute;
-  background-color: white;
-}
-
-.accordion-btn::before {
-  width: 2px; /* Thickness of the horizontal line */
-  height: 50%; /* Length of the horizontal line */
-}
-
-.accordion-btn::after {
-  width: 50%; /* Length of the vertical line */
-  height: 2px; /* Thickness of the vertical line */
-}
 .accordion-btn-text {
   color: #001276;
   text-decoration: underline;
@@ -95,15 +84,11 @@
 
 .faq-item {
   width: 100%;
-  padding: 20px;
-  overflow: hidden;
-  border: 2px solid #f6f6f6;
-  border-radius: 20px;
+
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   flex-direction: column;
-  gap: 12px;
 }
 
 .faq-item strong {
@@ -122,6 +107,15 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  -webkit-box-shadow: 0 4px 12px 0 rgba(237, 241, 245, 1);
+  -moz-box-shadow: 0 4px 12px 0 rgba(237, 241, 245, 1);
+  box-shadow: 0 4px 12px 0 rgba(237, 241, 245, 1);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.accordion-content {
+  padding: 20px;
 }
 
 .faq-item p {

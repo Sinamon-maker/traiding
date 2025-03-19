@@ -10,7 +10,6 @@
 
 /* Hero. Section */
 .hero-course {
-  margin-bottom: 20px;
   width: 100%;
   display: flex;
   height: 400px;
@@ -71,6 +70,43 @@
   }
 }
 
+/* Trust Advantages Section*/
+.trust-advantages {
+  margin-top: 40px;
+  width: 100%;
+}
+.trust-advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+.trust-advantages-card {
+  padding: 20px;
+  background-color: var(--secondary-color);
+  -webkit-box-shadow: 0 4px 12px 0 rgba(237, 241, 245, 1);
+  -moz-box-shadow: 0 4px 12px 0 rgba(237, 241, 245, 1);
+  box-shadow: 0 4px 12px 0 rgba(237, 241, 245, 1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.trust-advantages-card-text {
+  font-size: 3.6rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+@media (min-width: 1200px) {
+  .trust-advantages-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
 /* Trust Section */
 .trust {
   width: 100%;
@@ -79,7 +115,7 @@
 .trust-hero {
   width: 100%;
   height: 600px;
-  background-image: url("../assets/images/second-background.jpg");
+  background-image: url("../assets/images/background_trust.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -102,20 +138,49 @@
   color: var(--text-color-light);
 }
 
-.trust-advantages-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+.trust-hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trust-hero-boolets {
+  width: 570px;
+}
+
+.trust-hero--list {
+  display: flex;
+  flex-direction: column;
   gap: 30px;
+}
+
+.trust-hero-item {
+  color: var(--text-color-light);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.trust-hero-item span:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: var(--accent-color);
+  color: var(--text-color-light);
+  flex-shrink: 0;
 }
 
 @media (min-width: 768px) {
   .trust-hero {
-    height: 1600px;
-    padding-top: 95px;
+    height: 1238px;
+    padding-top: 70px;
   }
 
   .trust-hero-text {
-    width: 50%;
+    width: 570px;
     align-items: flex-start;
 
     padding: 0;
@@ -126,55 +191,25 @@
   }
 }
 
-.trust-advantages {
-  margin-top: 40px;
-}
-
-.trust-advantages-card {
-  padding: 20px;
-  background-color: var(--secondary-color);
-  -webkit-box-shadow: 0 4px 12px 0 rgba(237, 241, 245, 1);
-  -moz-box-shadow: 0 4px 12px 0 rgba(237, 241, 245, 1);
-  box-shadow: 0 4px 12px 0 rgba(237, 241, 245, 1);
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-}
-
-.trust-advantages-card-text {
-  font-size: 3.6rem;
-  font-weight: 600;
-  text-align: center;
-  letter-spacing: 0;
-}
-
 @media (min-width: 1200px) {
   .trust-hero {
   }
   .trust-hero-text {
-    width: 700px;
-  }
-
-  .trust-advantages-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
+    width: 570px;
   }
 }
 
 /* Stats Section */
 .stats {
-  background-color: var(--background-color);
+  background-color: var(--text-color-light);
   margin-bottom: 40px;
   text-align: center;
   width: 100%;
-  padding-top: 30px;
+  padding-top: 100px;
   padding-bottom: 30px;
 }
 
 .stats h2 {
-  color: var(--text-color-light);
   font-size: 5rem;
   margin-bottom: 60px;
 }
@@ -191,12 +226,15 @@
 .stats-item {
   background-color: #fff;
   padding: 40px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 12px 0 rgba(237, 241, 245, 1);
+  -moz-box-shadow: 0 4px 12px 0 rgba(237, 241, 245, 1);
+  box-shadow: 0 4px 12px 0 rgba(237, 241, 245, 1);
 }
 
 .stat-number {
   font-size: 1.6rem;
   font-weight: bold;
-  color: #006de3;
   display: block;
 }
 
@@ -497,6 +535,7 @@
     font-size: 5.6rem;
     margin-bottom: 30px;
     margin-top: 100px;
+    max-width: 1081px;
   }
 
   .choose-path-title {
@@ -621,9 +660,13 @@
 }
 .testimonials {
   background: #fff; /* White background */
-
   width: 100%;
   text-align: center;
+}
+.testimonials .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .testimonials h2 {
@@ -777,6 +820,10 @@
   .testimonials h2 {
     margin-bottom: 30px;
   }
+
+  .testimonials .btn {
+    width: fit-content;
+  }
   .testimonial-card .btn {
     width: fit-content;
     align-self: center;
@@ -863,6 +910,8 @@
     padding-left: 0;
     padding-right: 0;
     gap: 40px;
+    padding-top: 130px;
+    padding-bottom: 30px;
   }
 
   .why-us-heading {
@@ -994,9 +1043,8 @@
   font-size: 1.4rem;
 }
 
-.next-move h4 {
-  text-align: center;
-  color: var(--secondary-color);
+.next-move .event-card li span:first-child {
+  color: var(--accent-color);
 }
 
 .next-move .ready {
@@ -1032,14 +1080,21 @@
 }
 
 @media (min-width: 868px) {
+  .next-move {
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
   .next-move h2 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 5rem;
   }
   .next-move .next-move-cards {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
     row-gap: 30px;
     column-gap: 10px;
+    margin-top: 60px;
+    margin-bottom: 30px;
   }
   .next-move .event-card {
     width: 400px;
@@ -1091,8 +1146,12 @@
   align-self: center;
 }
 
+/* Questions Section */
+
 .questions {
   width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .questions .container {
