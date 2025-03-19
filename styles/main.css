@@ -237,7 +237,7 @@ section {
 }
 
 .btn:hover {
-  box-shadow: 0px 0px 5px rgb(8, 87, 64); /* Neon green glow */
+  box-shadow: 0px 0px 5px var(--accent-color); /* Neon green glow */
   transform: scale(1.05); /* Slightly enlarges the button */
   background-color: rgb(8, 87, 64);
 }
@@ -478,14 +478,12 @@ footer {
   width: 100%;
 }
 
-.footer-container {
+.footer .container {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  max-width: 1100px;
-  margin: 0 auto;
 }
 
 .footer-content {
