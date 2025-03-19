@@ -226,25 +226,12 @@
 }
 
 .stats-item {
-  padding-top: 2px;
-  position: relative;
   background-color: #fff;
   padding: 40px;
   border-radius: 10px;
   -webkit-box-shadow: 0 4px 12px 0 rgba(237, 241, 245, 1);
   -moz-box-shadow: 0 4px 12px 0 rgba(237, 241, 245, 1);
   box-shadow: 0 4px 12px 0 rgba(237, 241, 245, 1);
-}
-
-.stats-item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2px; /* thickness of the border */
-  width: 100%;
-  background: linear-gradient(to right, #006de3, #3797ff);
-  border-radius: 2px; /* optional, if you want rounded corners */
 }
 
 .stat-number {
