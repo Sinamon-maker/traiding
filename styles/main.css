@@ -293,7 +293,7 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 8px;
+  padding: 22px 8px;
 }
 header .logo {
   display: -webkit-flex;
@@ -446,6 +446,11 @@ header .nav-links {
   }
   header .nav-links a:last-child {
     color: var(--text-color-light);
+    font-size: 1.8rem;
+  }
+
+  header .nav-links .btn {
+    padding: 8px 16px;
   }
 
   header .nav-links a:not(:last-child):hover {
@@ -466,6 +471,17 @@ header .nav-links {
   }
   header .nav-links {
     gap: 20px;
+  }
+
+  header .nav-links a:not(:last-child) {
+    font-size: 1.6rem;
+  }
+
+  header .nav-links a:last-child {
+    font-size: 1.8rem;
+  }
+  header .nav-links .btn {
+    padding: 8px 16px;
   }
 }
 
