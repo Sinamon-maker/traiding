@@ -34,7 +34,7 @@
 
 .title-1-2 {
   font-size: 2.8rem;
-  left: 1;
+  line-height: 1.15;
 }
 .title-2 {
   font-size: 2.8rem;
@@ -662,7 +662,6 @@
 
   .choose-path h2 {
     margin-bottom: 28px;
-    margin-top: 100px;
     max-width: 1081px;
   }
 
@@ -791,19 +790,10 @@
 .trust-image {
   width: 100%;
   height: auto;
-  margin-top: 60px;
-  margin-bottom: 60px;
 }
 .trust-image-img {
   width: 100%;
   height: 100%;
-}
-
-@media (min-width: 768px) {
-  .trust-image {
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
 }
 
 /* Testimonials Section */
@@ -991,11 +981,7 @@
   font-size: 1.2;
 }
 
-@media (min-width: 769px) {
-  .testimonials {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
+@media (min-width: 768px) {
   .testimonials h2 {
     margin-bottom: 30px;
   }
