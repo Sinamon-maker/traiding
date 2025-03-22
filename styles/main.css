@@ -198,13 +198,13 @@ section {
 }
 
 .btn {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   padding: 6px 16px;
-  background-color: var(--accent-color); /* White background */
-  color: var(--text-color-light); /* Blue text */
-  border: 2px solid var(--accent-color); /* Blue border */
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -217,10 +217,16 @@ section {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
+.btn-secondary {
+  background-color: var(--primary-color);
+  color: var(--text-color-light);
+  border: 2px solid var(--primary-color);
+}
+
 .btn-accent {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  background-color: var(--accent-color);
+  color: var(--text-color-light);
+  border: 2px solid var(--accent-color);
 }
 
 @media (min-width: 768px) {
@@ -236,8 +242,14 @@ section {
   }
 }
 
-.btn:hover {
-  box-shadow: 0px 0px px var(--accent-color); /* Neon green glow */
+.btn-secondary:hover {
+  box-shadow: 0px 0px 2px var(--primary-color);
+  background-color: #015fc3;
+  transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+.btn-accent:hover {
+  box-shadow: 0px 0px 2px var(--accent-color); /* Neon green glow */
   transform: scale(1.05); /* Slightly enlarges the button */
   background-color: rgb(8, 87, 64);
 }
