@@ -140,6 +140,10 @@
   margin-bottom: 12px;
 }
 
+.faq-list-cons li span:first-child {
+  color: red;
+}
+
 .faq-list:not(:first-child) {
   margin-top: 10px;
 }

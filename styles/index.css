@@ -227,6 +227,8 @@
 .trust-hero-text p {
   max-width: 80%;
   color: var(--text-color-light);
+  font-size: 1.6rem;
+  line-height: 1.65;
 }
 
 .trust-hero-content {
@@ -237,7 +239,13 @@
 }
 
 .trust-hero-boolets {
+  display: none;
   width: 570px;
+}
+
+.trust-hero-boolets-mobile {
+  width: 100%;
+  padding: 40px 30px 20px;
 }
 
 .trust-hero--list {
@@ -251,6 +259,12 @@
   display: flex;
   align-items: flex-start;
   gap: 10px;
+  font-size: 1.6rem;
+  line-height: 1.65;
+}
+
+.trust-hero-boolets-mobile .trust-hero-item {
+  color: var(--background-color);
 }
 
 .trust-hero-item span:first-child {
@@ -266,6 +280,12 @@
 }
 
 @media (min-width: 768px) {
+  .trust-hero-boolets {
+    display: flex;
+  }
+  .trust-hero-boolets-mobile {
+    display: none;
+  }
   .trust-hero {
     height: 1238px;
     padding-top: 70px;
@@ -280,6 +300,16 @@
 
   .trust-hero-text h2 {
     text-align: left;
+  }
+
+  .trust-hero-text p {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  .trust-hero-item {
+    font-size: 2rem;
+    line-height: 1.5;
   }
 }
 
@@ -575,7 +605,6 @@
 
   .choose-path h2 {
     margin-bottom: 30px;
-    margin-top: 70px;
   }
 
   .choose-path-title {
@@ -1332,7 +1361,6 @@
   font-size: 2.8rem;
   text-align: center;
   margin-bottom: 30px;
-  margin-top: 40px;
 }
 .questions-content {
   width: 100%;
@@ -1391,7 +1419,6 @@
 @media (min-width: 768px) {
   .questions h2 {
     font-size: 5rem;
-    margin-top: 70px;
     margin-bottom: 60px;
   }
   .questions-content {

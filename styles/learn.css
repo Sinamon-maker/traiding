@@ -18,17 +18,14 @@
   margin-bottom: 20px;
   max-width: 90%;
 }
-.crypyo-topics {
+.crypto-topics {
   width: 100%;
   margin-bottom: 20px;
-}
-
-.crypyo-topics .container {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.crypyo-topics-grid {
+.crypto-topics-grid {
   display: -webkit-grid;
   display: -ms-grid;
   display: grid;
@@ -36,7 +33,7 @@
   gap: 20px;
 }
 
-.crypto-topics-big {
+.crypto-topics {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -56,20 +53,7 @@
   place-self: center;
 }
 
-.crypto-topic-cards-small {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-between;
-  gap: 12px;
-  margin-top: 30px;
-}
-
-.crypto-topic-cards-small .crypto-topic-card {
-  width: 48%;
-}
-
-.crypto-topics-big .crypto-topic-card {
+.crypto-topics .crypto-topic-card {
   width: 100%;
 }
 
@@ -80,12 +64,17 @@
   background-color: #cfcfcf;
 }
 
-.crypto-topic-card p {
-  font-size: 1.6rem;
+.crypto-topic-card h3 {
+  font-size: 2.8rem;
+  line-height: 1.06;
+  font-family: 600;
 }
 
 .crypyo-topics-card-text {
   flex: 1;
+  color: #343749;
+  font-size: 1.8rem;
+  line-height: 1;
 }
 
 .crypto-topics-link {
@@ -107,16 +96,13 @@
 }
 
 @media (min-width: 768px) {
-  .crypyo-topics .container {
-    width: 90%;
-  }
-
   .foundation-heading {
     margin-top: 40px;
   }
 
   .crypyo-topics {
     margin-bottom: 40px;
+    padding: 0;
   }
   .crypyo-topics-grid {
     display: -webkit-grid;
@@ -126,22 +112,19 @@
     gap: 40px;
   }
 
-  .crypto-topics-big {
+  .crypto-topics {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  .crypto-topic-cards-small {
-    width: 90%;
+  .crypto-topic-cards {
+    width: 100%;
     margin: 0 auto;
     margin-top: 20px;
   }
 
-  .crypto-topics-big .crypto-topic-card {
-    width: 33.3%;
-  }
-
-  .crypto-topic-cards-small .crypto-topic-card {
-    width: 30%;
+  .crypto-topics .crypto-topic-card {
+    width: 48%;
   }
 
   .crypto-topic-card {
@@ -156,5 +139,8 @@
 @media (min-width: 1200px) {
   .crypyo-topics-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .crypto-topics .crypto-topic-card {
+    width: 30%;
   }
 }
