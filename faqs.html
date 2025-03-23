@@ -12,6 +12,8 @@
     />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/faqs.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js" defer></script>
 
     <link
@@ -31,10 +33,11 @@
         <nav class="nav-links">
           <a href="resources.html">Resources</a>
           <a href="faqs.html">FAQs</a>
+          <a href="learn.html">Crypto Foundation</a>
           <a href="started.html">Get Started Now</a>
         </nav>
         <nav id="nav-burger" class="nav-burger">
-          <button id="burger" class="burger" aria-label="menu">
+          <button type="button" id="burger" class="burger" aria-label="menu">
             <span></span>
             <span></span>
             <span></span>
@@ -43,475 +46,892 @@
             <a href="started.html">Get Started Now</a>
             <a href="resources.html">Resources</a>
             <a href="faqs.html">FAQs</a>
+            <a href="learn.html">Crypto Foundation</a>
           </div>
         </nav>
       </div>
     </header>
+    <main class="faq-root">
+      <h1 class="faq-heading">Still have questions? We’ve got you covered!</h1>
+      <p class="faq-subtitle">
+        Before you join PrimeEdge Academy, we want to make sure you have all the
+        answers. Below are the most common questions we receive—so you can
+        enroll with full confidence!
+      </p>
 
-    <!-- FAQ Section -->
-    <section class="faq-section">
-      <div class="container">
-        <!-- FAQ 1 -->
-        <div class="faq-item">
-          <h3>Will This Course Teach Me How to Trade Profitably?</h3>
-          <div class="faq-item-content">
-            <p>Absolutely—if you follow the system!</p>
-            <p>
-              This isn’t just another course—it’s a blueprint designed to help
-              you trade like a professional.
-            </p>
-            <ul>
-              <li class="highlight">
-                Battle-Tested Strategies – You’ll learn the exact trading
-                methods used by professionals to spot high-probability setups,
-                minimize risk, and execute trades with precision.
-              </li>
-              <li class="highlight">
-                Risk Management &amp; Smart Trading – Avoid the costly mistakes
-                that cause most traders to fail and instead learn how to control
-                risk like a pro.
-              </li>
-              <li class="highlight">
-                Market Psychology &amp; Mindset Training – Success isn’t just
-                about charts—it’s about thinking like a winning trader and
-                staying ahead of market moves.
-              </li>
-            </ul>
-            <p>
-              Truth bomb: Trading isn’t luck—it’s a SKILL.<br />
-              The difference between traders who make money and those who lose?
-              Knowledge, strategy, and discipline.
-            </p>
-            <p>
-              We give you the knowledge, the strategy, and the tools—the rest is
-              up to you!
-            </p>
-            <p>
-              Ready to trade smarter and take control of your financial future?
-            </p>
+      <!-- FAQ Section -->
+      <section class="faq-section">
+        <div class="container">
+          <div class="faq-grid">
+            <!-- FAQ 1 -->
+            <div class="faq-item">
+              <div class="accordion-heading">
+                <h3>
+                  What makes PrimeEdge Academy different from free YouTube
+                  videos or other courses?
+                </h3>
+                <button
+                  class="accordion-btn accordion-header"
+                  data-target="#content1"
+                  type="button"
+                >
+                  <svg width="8" height="14">
+                    <use xlink:href="assets/icon/arrow_down.svg#arrow-down" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="faq-item-content">
+                <div id="content1" class="accordion-content">
+                  <ul class="faq-list">
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        Most courses &amp; free content only teach outdated or
+                        generic strategies that don’t work in real market
+                        conditions.</span
+                      >
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        At PrimeEdge Academy, you’re learning the exact
+                        strategies hedge funds & market makers use to stay
+                        ahead.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        We don’t just educate—we guide, support, and provide you
+                        with live AI-driven insights, institutional-level
+                        signals, and mentorship to ensure you trade
+                        successfully.
+                      </span>
+                    </li>
+                  </ul>
+                  <p>
+                    <span>
+                      Bonus: Unlike free content, we offer real-time market
+                      data, access to elite traders, and an exclusive mentorship
+                      program that ensures you execute winning trades, not just
+                      learn theories.
+                    </span>
+                    <span>
+                      If you’re serious about trading, this is your shortcut to
+                      trading like the top 1% of market movers!
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+              <div class="accordion-heading">
+                <h3>How does the Telegram community help me trade better?</h3>
+                <button
+                  class="accordion-btn accordion-header"
+                  data-target="#content2"
+                  type="button"
+                >
+                  <svg width="8" height="14">
+                    <use xlink:href="assets/icon/arrow_down.svg#arrow-down" />
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-item-content">
+                <div id="content2" class="accordion-content">
+                  <p>
+                    The PrimeEdge Elite Inner Circle Telegram is your direct
+                    connection to real-time market insights that only top
+                    traders and institutions have access to.
+                  </p>
+                  <ul class="faq-list">
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong class="highlight"
+                          >AI-Driven trade alerts:</strong
+                        >
+                        Our cutting-edge algorithm tracks whale movements &amp;
+                        institutional trades to deliver signals BEFORE the
+                        market reacts.
+                      </span>
+                    </li>
+
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong class="highlight">
+                          Instant market updates:</strong
+                        >
+                        Get exclusive access to daily trading insights, breaking
+                        news, and upcoming market moves—BEFORE the public sees
+                        them.
+                      </span>
+                    </li>
+
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong class="highlight">
+                          Trade like an insider:</strong
+                        >
+                        While retail traders chase trends too late, you’ll be
+                        ahead, entering positions with the same precision as the
+                        market’s biggest players.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong class="highlight">
+                          Community &amp; expert analysis:</strong
+                        >
+                        Interact with pro traders, discuss strategies, and
+                        fine-tune your skills with guidance from real industry
+                        experts.
+                      </span>
+                    </li>
+                  </ul>
+                  <p>
+                    <span>
+                      This is not just a trading group—it’s an elite network
+                      giving you a real edge in the markets!
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+              <div class="accordion-heading">
+                <h3>
+                  I’m a complete beginner. Will I actually be able to learn &
+                  profit from this?
+                </h3>
+                <button
+                  class="accordion-btn accordion-header"
+                  data-target="#content3"
+                  type="button"
+                >
+                  <svg width="8" height="14">
+                    <use xlink:href="assets/icon/arrow_down.svg#arrow-down" />
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-item-content">
+                <div id="content3" class="accordion-content">
+                  <p>
+                    <span>
+                      Absolutely! PrimeEdge Academy is built for both beginners
+                      and advanced traders.
+                    </span>
+                  </p>
+                  <h4>If you're new to crypto trading:</h4>
+                  <ul class="faq-list">
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        Start with “Crypto mastery”, which is designed to take
+                        you from ZERO to confidently executing profitable
+                        trades.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        No prior experience required – Our training simplifies
+                        complex strategies into easy-to-follow steps.
+                      </span>
+                    </li>
+                  </ul>
+                  <h4>If you already have experience but want to level up:</h4>
+                  <ul class="faq-list">
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        "1-on-1 weekly sessions" give you access to next-level
+                        strategies, insider knowledge, and the same
+                        institutional market data used by professionals.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        You’ll trade with real-time AI signals &amp; expert
+                        support, ensuring that you don’t just learn— you profit.
+                      </span>
+                    </li>
+                  </ul>
+
+                  <p>
+                    <span>
+                      No matter your level, we take you step by step to become a
+                      top-tier trader.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+              <div class="accordion-heading">
+                <h3>
+                  What happens during the 1-on-1 mentorship with elite market
+                  makers?
+                </h3>
+                <button
+                  class="accordion-btn accordion-header"
+                  data-target="#content4"
+                  type="button"
+                >
+                  <svg width="8" height="14">
+                    <use xlink:href="assets/icon/arrow_down.svg#arrow-down" />
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-item-content">
+                <div id="content4" class="accordion-content">
+                  <p>
+                    <span>
+                      Our Trading Elite Mentorship is the highest-level access
+                      you can get to professional trading expertise.
+                    </span>
+                  </p>
+                  <h4>What you’ll experience:</h4>
+                  <ul class="faq-list">
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        Weekly private 1-on-1 coaching with a top-tier market
+                        maker who will personally analyze your trades, refine
+                        your strategies, and provide customized insights.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        Live mentorship in real market conditions – Learn how to
+                        spot high-probability setups before they happen and
+                        execute trades with precision.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        Direct Q&A &amp; Personal Feedback – Unlike generic
+                        courses, you’ll get answers tailored to your specific
+                        trading style and challenges.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        Access to hidden strategies that hedge funds &amp;
+                        institutions use to dominate the market— but never share
+                        publicly.
+                      </span>
+                    </li>
+                  </ul>
+
+                  <p>
+                    <span>
+                      This isn’t just mentorship—it’s your direct path to
+                      becoming a high-level profitable trader.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="faq-item">
+              <div class="accordion-heading">
+                <h3>Is this really worth the investment?</h3>
+                <button
+                  class="accordion-btn accordion-header"
+                  data-target="#content5"
+                  type="button"
+                >
+                  <svg width="8" height="14">
+                    <use xlink:href="assets/icon/arrow_down.svg#arrow-down" />
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-item-content">
+                <div id="content5" class="accordion-content">
+                  <p>
+                    <span>
+                      Let’s put it this way—what’s the cost of NOT learning how
+                      to trade properly?
+                    </span>
+                  </p>
+                  <h4>Without real market knowledge:</h4>
+                  <ul class="faq-list faq-list-cons">
+                    <li class="start-flex">
+                      <span>&#10005;</span>
+                      <span>
+                        You’ll keep making the same mistakes that cause 90% of
+                        traders to lose money.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&#10005;</span>
+                      <span>
+                        You’ll waste time chasing hype &amp; guessing instead of
+                        making data-driven profitable decisions.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&#10005;</span>
+                      <span>
+                        You’ll miss out on life-changing opportunities to secure
+                        financial independence.
+                      </span>
+                    </li>
+                  </ul>
+
+                  <h4>With PrimeEdge Academy:</h4>
+                  <ul class="faq-list">
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        You gain real-world expertise, AI-driven insights, and
+                        professional mentorship to trade with confidence.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        You get lifetime skills that allow you to profit from
+                        anywhere, anytime, without relying on a 9-5 job.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        Our students have made $5M+ in combined profits, and the
+                        next success story could be YOU.
+                      </span>
+                    </li>
+                  </ul>
+                  <p>
+                    <span>
+                      If you’re serious about wealth-building, this is the best
+                      investment you’ll ever make in yourself!
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div class="faq-item">
+              <div class="accordion-heading">
+                <h3>How do I know the AI-generated signals are reliable?</h3>
+                <button
+                  class="accordion-btn accordion-header"
+                  data-target="#content6"
+                  type="button"
+                >
+                  <svg width="8" height="14">
+                    <use xlink:href="assets/icon/arrow_down.svg#arrow-down" />
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-item-content">
+                <div id="content6" class="accordion-content">
+                  <p>
+                    <span>
+                      Our AI-powered trading system is not just any signal
+                      provider—it’s built with the same institutional-grade
+                      technology used by hedge funds and elite traders.
+                    </span>
+                  </p>
+                  <h4>Why our AI signals give you a true market advantage:</h4>
+                  <ul class="faq-list">
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong>95%+ precision rate </strong>– Our AI tracks
+                        market cycles, whale transactions, and institutional
+                        orders in real time.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong>Signals BEFORE market moves </strong>– Unlike
+                        typical traders who react too late, you’ll receive
+                        strategic trade alerts before major price movements.
+                      </span>
+                    </li>
+
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong>Data-backed, not hype-driven </strong>– Our
+                        system filters out market noise, delivering only
+                        actionable insights that lead to high-probability
+                        trades.
+                      </span>
+                    </li>
+
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong>Live expert validation </strong>– Every signal
+                        is reviewed and analyzed by our professional traders
+                        before it reaches you.
+                      </span>
+                    </li>
+                  </ul>
+
+                  <p>
+                    <span>
+                      This isn’t a guessing game—our AI ensures you trade with
+                      data-backed precision!
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 7 -->
+            <div class="faq-item">
+              <div class="accordion-heading">
+                <h3>What if I don’t have time to trade all day?</h3>
+                <button
+                  class="accordion-btn accordion-header"
+                  data-target="#content7"
+                  type="button"
+                >
+                  <svg width="8" height="14">
+                    <use xlink:href="assets/icon/arrow_down.svg#arrow-down" />
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-item-content">
+                <div id="content7" class="accordion-content">
+                  <p>
+                    <span>
+                      You don’t need to sit at your screen 24/7—our academy is
+                      designed for people with busy schedules who want to trade
+                      efficiently.
+                    </span>
+                  </p>
+                  <h4>How we make trading work for YOU:</h4>
+                  <ul class="faq-list">
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong>Short, high-impact lessons </strong>– Learn at
+                        your own pace, even if you have just 30 minutes a day.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong>Real-time trade alerts </strong>– Get notified
+                        instantly when high-probability setups occur, so you
+                        only trade when it matters.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong>Mentorship sessions fit your schedule </strong>–
+                        1-on-1 coaching calls are scheduled based on your
+                        availability.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong
+                          >Swing &amp; long-term strategies included </strong
+                        >– If you can’t trade daily, our methods teach you how
+                        to profit from larger market trends.
+                      </span>
+                    </li>
+                  </ul>
+
+                  <p>
+                    <span>
+                      You don’t need more time—you need a smarter strategy!
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 8 -->
+            <div class="faq-item">
+              <div class="accordion-heading">
+                <h3>
+                  What if I’ve lost money trading before? How do I know this
+                  will be different?
+                </h3>
+                <button
+                  class="accordion-btn accordion-header"
+                  data-target="#content8"
+                  type="button"
+                >
+                  <svg width="8" height="14">
+                    <use xlink:href="assets/icon/arrow_down.svg#arrow-down" />
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-item-content">
+                <div id="content8" class="accordion-content">
+                  <p>
+                    <span>
+                      If you’ve lost money in the past, you’re not alone—90% of
+                      traders fail because they never had access to real
+                      institutional-level education.
+                    </span>
+                  </p>
+                  <h4>
+                    Why PrimeEdge Academy ensures success where others fail:
+                  </h4>
+                  <ul class="faq-list">
+                    <li>
+                      You’ll learn from professional traders, not social media
+                      hype.
+                    </li>
+                    <li>
+                      We focus on risk management &amp; capital protection
+                      first—before even thinking about profits.
+                    </li>
+                    <li>
+                      Our AI-generated insights &amp; expert mentorship ensure
+                      that you make calculated, high- probability trades.
+                    </li>
+                    <li>
+                      You’ll be surrounded by a winning community of traders who
+                      will keep you accountable and help refine your approach.
+                    </li>
+                  </ul>
+
+                  <p>
+                    This isn’t just another crypto course—it’s a COMPLETE
+                    trading experience.
+                  </p>
+
+                  This time, you’ll trade with confidence, strategy, and
+                  precision—no more gambling.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 9 -->
+            <div class="faq-item">
+              <div class="accordion-heading">
+                <h3>Do I need a big budget to start trading?</h3>
+                <button
+                  class="accordion-btn accordion-header"
+                  data-target="#content9"
+                  type="button"
+                >
+                  <svg width="8" height="14">
+                    <use xlink:href="assets/icon/arrow_down.svg#arrow-down" />
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-item-content">
+                <div id="content9" class="accordion-content">
+                  <p>
+                    <span>
+                      Absolutely not! You can start trading with as little as
+                      $50-$100, and we’ll teach you how to grow your portfolio
+                      strategically.
+                    </span>
+                  </p>
+                  <h4>How we help you scale your trading from any budget:</h4>
+                  <ul class="faq-list">
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong>Risk-management strategies </strong>– Learn how
+                        to compound small wins into massive gains.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong>Leverage opportunities </strong>– Discover safe,
+                        calculated ways to maximize your buying power without
+                        reckless risk.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <strong>Scalable techniques </strong>– Whether you start
+                      with $100 or $10,000, our strategies work at every level.
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <strong>Step-by-step guidance </strong>– We’ll teach you
+                      how to build a profitable trading portfolio from scratch.
+                    </li>
+                  </ul>
+                  <p>
+                    <span>
+                      Start small, build smart, and watch your profits multiply!
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 10 -->
+            <div class="faq-item">
+              <div class="accordion-heading">
+                <h3>Can I really make a full-time income from trading?</h3>
+                <button
+                  class="accordion-btn accordion-header"
+                  data-target="#content10"
+                  type="button"
+                >
+                  <svg width="8" height="14">
+                    <use xlink:href="assets/icon/arrow_down.svg#arrow-down" />
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-item-content">
+                <div id="content10" class="accordion-content">
+                  <p>
+                    <span>
+                      Yes! But only if you learn to trade like the
+                      professionals.
+                    </span>
+                  </p>
+                  <h4>
+                    Here’s how PrimeEdge Academy helps you replace your 9-5
+                    income:
+                  </h4>
+                  <ul class="faq-list">
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        You get real, repeatable strategies that allow you to
+                        profit consistently—without relying on luck.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        The Elite Inner Circle Telegram keeps you updated with
+                        market shifts in real time, so you never miss a trade.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      The 1-on-1 mentorship ensures you’re on the right track,
+                      with expert traders helping you execute like a pro.
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      We teach you income diversification strategies—so you can
+                      grow your wealth beyond just trading profits.
+                    </li>
+                  </ul>
+                  <p>
+                    <span>
+                      If financial freedom is your goal, PrimeEdge Academy is
+                      your roadmap!
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- FAQ 11 -->
+            <div class="faq-item">
+              <div class="accordion-heading">
+                <h3>What if I fail? I don’t want to waste my money.</h3>
+                <button
+                  class="accordion-btn accordion-header"
+                  data-target="#content11"
+                  type="button"
+                ></button>
+              </div>
+              <div class="faq-item-content">
+                <div id="content11" class="accordion-content">
+                  <p>
+                    <span>
+                      You are already fail by not registering yourself earlier,
+                      don’t you get nervous seeing others making life changing
+                      gains? PrimeEdge Academy is built for real-world success,
+                      and we ensure every student gets the guidance they need to
+                      win big!
+                    </span>
+                  </p>
+                  <h4>Why failure is not an option:</h4>
+                  <ul class="faq-list">
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong>Beginner-friendly training </strong>— especially
+                        if you’ve never traded before.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong
+                          >AI-driven trade signals &amp; expert analysis </strong
+                        >— helping you avoid costly mistakes.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <strong
+                        >A supportive community &amp; direct mentorship </strong
+                      >— so you never feel lost.
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <strong>Step-by-step guidance </strong>— we teach you the
+                      same structured process used by elite traders.
+                    </li>
+                  </ul>
+                  <p>
+                    <span>
+                      The real waste of money? Continuing to trade without the
+                      right knowledge and losing even more.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 12 -->
+            <div class="faq-item">
+              <div class="accordion-heading">
+                <h3>Can I make a full-time income trading?</h3>
+                <button
+                  class="accordion-btn accordion-header"
+                  data-target="#content12"
+                  type="button"
+                >
+                  <svg width="8" height="14">
+                    <use xlink:href="assets/icon/arrow_down.svg#arrow-down" />
+                  </svg>
+                </button>
+              </div>
+              <div class="faq-item-content">
+                <div id="content12" class="accordion-content">
+                  <p>
+                    <span>
+                      YES — but only if you trade like the professionals.
+                    </span>
+                  </p>
+                  <p>
+                    <span>
+                      Most traders fail because they rely on guesswork,
+                      emotions, or social media hype. At PrimeEdge Academy, we
+                      give you the exact blueprint used by hedge funds and
+                      market makers—so you can trade with precision and
+                      confidence.
+                    </span>
+                  </p>
+                  <ul class="faq-list">
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong>Learn proven, repeatable strategies </strong>–
+                        We don’t rely on “luck” or risky bets. Our system is
+                        designed to generate consistent profits, trade after
+                        trade.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong>Real-time market intelligence </strong>– Get
+                        AI-powered trade alerts and institutional-level
+                        insights—so you always know when to enter and exit.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <span
+                        ><strong>The elite inner circle </strong>– You’ll never
+                        trade alone. Our exclusive Telegram community and
+                        mentorship program ensure you stay ahead of market
+                        trends.
+                      </span>
+                    </li>
+                    <li class="start-flex">
+                      <span>&bull;</span>
+                      <strong>One-on-One coaching with market makers </strong>–
+                      In our highest-tier program, you get private sessions with
+                      elite traders, refining your skills for high-precision
+                      trading.
+                    </li>
+                  </ul>
+                  <p>
+                    <span>
+                      Making a full-time income from trading is 100% possible—IF
+                      you treat it like a business, follow a proven system, and
+                      learn from professionals who already succeed in the
+                      markets.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <a href="courses.html" class="btn"
-            >GET STARTED NOW – LEARN FROM THE BEST</a
+        </div>
+      </section>
+
+      <!-- Contact Us Section -->
+      <section id="contact-us" class="contact-us">
+        <div class="contact-us-content container">
+          <h2>Contact us – we’re here to help!</h2>
+          <p>
+            Have questions? Need assistance? Our team is ready to support you!
+          </p>
+          <p class="access-links">
+            <span>Reach out to us anytime:</span>
+
+            <svg
+              width="22"
+              height="16"
+              viewBox="0 0 22 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.75 2.75V13.25C20.75 13.6478 20.592 14.0294 20.3107 14.3107C20.0294 14.592 19.6478 14.75 19.25 14.75H2.75C2.35218 14.75 1.97064 14.592 1.68934 14.3107C1.40804 14.0294 1.25 13.6478 1.25 13.25V2.75M20.75 2.75C20.75 2.35218 20.592 1.97064 20.3107 1.68934C20.0294 1.40804 19.6478 1.25 19.25 1.25H2.75C2.35218 1.25 1.97064 1.40804 1.68934 1.68934C1.40804 1.97064 1.25 2.35218 1.25 2.75M20.75 2.75L11.8535 8.909C11.6027 9.08253 11.305 9.17549 11 9.17549C10.695 9.17549 10.3973 9.08253 10.1465 8.909L1.25 2.75"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <a href="#" class="telegramm">
+              <img
+                class="telegramm-img"
+                src="assets/icon/telegram_icon_48x48.png"
+              />
+            </a>
+          </p>
+          <p>
+            We value our students and are committed to providing top-tier
+            support!
+          </p>
+          <a href="#choose-path" class="btn"
+            >Get started now – join the winning trades!</a
           >
         </div>
-
-        <!-- FAQ 2 -->
-        <div class="faq-item">
-          <h3>Do I Need Prior Experience to Enroll?</h3>
-          <div class="faq-item-content">
-            <p>No experience? No problem!</p>
-            <p>
-              This course is designed to take you from absolute beginner to
-              confident trader—step by step, without the confusion.
-            </p>
-            <ul>
-              <li class="highlight">
-                Beginner-Friendly Learning – We break down complex trading
-                concepts into simple, easy-to-follow lessons, so you can start
-                with ZERO knowledge and still master the market.
-              </li>
-
-              <li class="highlight">
-                Structured, Step-by-Step Training – No guesswork, no information
-                overload. Every lesson builds on the last, so you’re never left
-                wondering, "What do I do next?"
-              </li>
-
-              <li class="highlight">
-                Already Know the Basics? – Jump straight into the Advanced
-                Crypto Mastery Course and learn pro-level strategies used by
-                experienced traders.
-              </li>
-            </ul>
-            <p>
-              Whether you’re a total beginner or already have some experience,
-              we have the perfect course to fit your trading journey.
-            </p>
-            <p>
-              The only mistake? Waiting to start. The best traders take action
-              NOW!
-            </p>
-          </div>
-          <a href="courses.html" class="btn"
-            >GET STARTED &amp; MASTER THE MARKETS TODAY!</a
-          >
-        </div>
-
-        <!-- FAQ 3 -->
-        <div class="faq-item">
-          <h3>Will I Learn How to Manage Risk and Trade Profitably?</h3>
-          <div class="faq-item-content">
-            <p>
-              YES! The key to winning in trading isn’t just making money—it’s
-              keeping it!
-            </p>
-            <p>
-              Risk management separates amateurs from professionals, and we make
-              sure you master it.
-            </p>
-            <ul>
-              <li class="highlight">
-                No More Emotional Trading – Learn how to stick to a plan, avoid
-                panic selling, and trade with precision.
-              </li>
-              <li class="highlight">
-                Smart Position Sizing – We show you how to control your risk so
-                that no single trade can wipe out your account.
-              </li>
-              <li class="highlight">
-                High-Probability Trades – You’ll learn how to ONLY take trades
-                that give you a real edge in the market.
-              </li>
-            </ul>
-
-            <p>
-              FACT: Most traders lose because they don’t know how to manage
-              risk. After this course, YOU WON’T be one of them.
-            </p>
-            <p>
-              If you want to trade like the pros, risk management is key—and
-              we’ve got you covered.
-            </p>
-          </div>
-
-          <a href="#" class="btn"
-            >MASTER RISK MANAGEMENT &amp; WIN MORE TRADES!</a
-          >
-        </div>
-
-        <!-- FAQ 4 -->
-        <div class="faq-item">
-          <h3>How Do I Access the VIP Telegram Group?</h3>
-          <div class="faq-item-content">
-            <p>
-              Instant access to real-time market insights, trade discussions,
-              and direct expert guidance!
-            </p>
-            <p>
-              When you enroll in the VIP Package, you get more than a course—you
-              get access to an exclusive community of serious traders.
-            </p>
-            <ul>
-              <li class="highlight">
-                Live Market Insights – See EXACTLY what top traders are
-                thinking, in real time.
-              </li>
-              <li class="highlight">
-                Daily Trade Setups &amp; Strategy Breakdowns – Know which trades
-                to take BEFORE the market moves.
-              </li>
-              <li class="highlight">
-                Ask Questions, Get Expert Feedback – Have direct access to
-                professional traders, so you’re never left guessing.
-              </li>
-            </ul>
-
-            <p>
-              Think of this as your VIP pass to the inner circle of elite
-              traders. No more trading alone—now you’re part of the winning
-              team!
-            </p>
-            <p>This is where successful traders are made. Are you in?</p>
-          </div>
-
-          <a href="courses.html" class="btn"> UNLOCK VIP ACCESS NOW!</a>
-        </div>
-
-        <!-- FAQ 5 -->
-        <div class="faq-item">
-          <h3>Is This a One-Time Payment or Are There Hidden Fees?</h3>
-          <div class="faq-item-content">
-            <p>
-              One payment. LIFETIME access. NO hidden fees. NO monthly
-              subscriptions.
-            </p>
-            <p>
-              We don’t believe in charging you again and again. You pay ONCE and
-              get FULL access—forever.
-            </p>
-
-            <ul>
-              <li class="highlight">
-                No Monthly Fees – One investment, and you OWN the knowledge for
-                life.
-              </li>
-              <li class="highlight">
-                No Locked Content – Everything you need to trade successfully is
-                included upfront.
-              </li>
-              <li class="highlight">
-                All Future Updates Included – As markets evolve, we keep the
-                course updated—and you get it all for FREE.
-              </li>
-            </ul>
-            <p>
-              Other courses keep charging you—PrimeEdgeAcademy gives you
-              everything you need in one powerful package.
-            </p>
-            <p>Invest once, profit for a lifetime!</p>
-          </div>
-
-          <a href="courses.html" class="btn"> GET FULL LIFETIME ACCESS NOW!</a>
-        </div>
-
-        <!-- FAQ 6 -->
-        <div class="faq-item">
-          <h3>How Long Do I Have Access to the Course?</h3>
-          <div class="faq-item-content">
-            <p>FOREVER. No limits. No expiration.</p>
-            <p>You’re not renting this knowledge—you OWN it.</p>
-            <ul>
-              <li class="highlight">
-                Lifetime Access, No Restrictions – Watch, rewatch, and master
-                trading at your own pace.
-              </li>
-              <li class="highlight">
-                Continuous Updates – The market changes, and so does our course.
-                You’ll always have the latest strategies.
-              </li>
-              <li class="highlight">
-                Learn On Your Own Time – Busy schedule? No problem. You can
-                access the course whenever you’re ready!
-              </li>
-            </ul>
-
-            <p>
-              This is a one-time investment in knowledge that will serve you for
-              years to come.
-            </p>
-            <p>Serious about trading? Then lock in your access today!</p>
-          </div>
-
-          <a href="courses.html" class="btn"> GET LIFETIME ACCESS NOW!</a>
-        </div>
-
-        <!-- FAQ 7 -->
-        <div class="faq-item">
-          <h3>Why Choose This Course Instead of Free YouTube Videos?</h3>
-          <div class="faq-item-content">
-            <p>
-              Because free content will NEVER give you a complete, structured
-              system for trading success.
-            </p>
-            <p>
-              Here’s why YouTube and free content will NEVER get you the results
-              you want:
-            </p>
-            <ul>
-              <li class="highlight">
-                No Structure – You’re piecing together random information, with
-                no roadmap or real strategy.
-              </li>
-              <li class="highlight">
-                Outdated or Confusing Info – Most free content is surface-level
-                and won’t teach you the true strategies pros use.
-              </li>
-              <li class="highlight">
-                No Mentorship or Support – Who do you turn to when you’re stuck?
-                Free content won’t give you expert guidance.
-              </li>
-            </ul>
-
-            <p>With PrimeEdgeAcademy, you get:</p>
-            <ul>
-              <li class="highlight">
-                A step-by-step roadmap to profitable trading.
-              </li>
-              <li class="highlight">
-                Real strategies that work in today’s markets.
-              </li>
-              <li class="highlight">
-                Direct mentorship, VIP community, and 1-on-1 support.
-              </li>
-            </ul>
-
-            <p>
-              Free content keeps you stuck—structured learning moves you
-              forward. The choice is yours.
-            </p>
-            <p>Are you ready to learn the RIGHT way?</p>
-          </div>
-
-          <a href="courses.html" class="btn">
-            STOP WASTING TIME &amp; START TRADING SMARTER!</a
-          >
-        </div>
-
-        <!-- FAQ 8 -->
-        <div class="faq-item">
-          <h3>
-            How is PrimeEdgeAcademy Different from Other Crypto Trading Courses?
-          </h3>
-          <div class="faq-item-content">
-            <p>
-              GREAT question! Here’s the brutal truth—most online crypto courses
-              are nothing more than rebranded YouTube content, outdated PDFs, or
-              basic strategies that don’t actually help you trade successfully.
-            </p>
-            <p>
-              Here’s what makes PrimeEdgeAcademy the ONLY course you’ll ever
-              need:
-            </p>
-            <ul class="faq-list">
-              <li>
-                <p class="highlight">
-                  REAL STRATEGIES FROM REAL TRADERS – NOT THEORIES!
-                </p>
-                <p>
-                  Most courses give you fluff—they teach you about Bitcoin
-                  history, what a blockchain is, and generic chart patterns that
-                  don’t work in today’s market.
-                </p>
-
-                <ul>
-                  <li class="highlight">
-                    We teach you EXACTLY what pro traders use to WIN.
-                  </li>
-                  <li class="highlight">
-                    You’ll learn how institutions manipulate price &amp; how to
-                    trade alongside them.
-                  </li>
-                  <li class="highlight">
-                    No guessing. No gambling. Just a bulletproof system that
-                    works.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <p class="highlight">
-                  20+ HOURS OF VIDEO TRAINING – STEP-BY-STEP FROM BEGINNER TO
-                  PRO!
-                </p>
-                <p>
-                  Most courses give you 2-3 hours of surface-level content and
-                  expect you to figure out the rest on your own.
-                </p>
-                <ul>
-                  <li class="highlight">
-                    PrimeEdgeAcademy delivers 20+ hours of structured,
-                    easy-to-follow lessons that take you from absolute beginner
-                    to confident, profitable trader.
-                  </li>
-                  <li class="highlight">
-                    No skipping steps. No holes in your knowledge.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <p class="highlight">
-                  LIVE MARKET BREAKDOWNS &amp; REAL-TIME TRADE INSIGHTS!
-                </p>
-                <p>
-                  Most courses are static content—recorded once and never
-                  updated. You finish the course, but then you’re stuck asking,
-                  “What do I do next?”
-                </p>
-                <ul>
-                  <li class="highlight">
-                    With PrimeEdgeAcademy, you get VIP access to a private
-                    trading community where we break down real trades, analyze
-                    market trends, and guide you through the ever-changing
-                    crypto landscape.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <p class="highlight">
-                  EXCLUSIVE VIP TELEGRAM GROUP &amp; 1-ON-1 MENTORSHIP!
-                </p>
-                <p>Most courses sell you a package and disappear.</p>
-                <ul>
-                  <li class="highlight">
-                    We stay with you. When you enroll in our VIP package, you
-                    get access to professional traders, daily market updates,
-                    and the ability to ask questions 24/7.
-                  </li>
-                  <li class="highlight">
-                    You’ll NEVER feel lost in the market again.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <p class="highlight">LIFETIME ACCESS – NO MONTHLY FEES!</p>
-                <p>
-                  Most courses lock you into subscriptions or force you to pay
-                  for “advanced” lessons after your initial purchase.
-                </p>
-                <ul>
-                  <li class="highlighy">
-                    PrimeEdgeAcademy gives you everything upfront—one payment,
-                    lifetime access, no hidden fees!
-                  </li>
-                </ul>
-              </li>
-            </ul>
-
-            <p>
-              This isn’t just another crypto course—it’s a COMPLETE trading
-              experience.
-            </p>
-            <p>
-              If you’re tired of courses that overpromise and underdeliver, it’s
-              time to take your trading seriously.
-            </p>
-            <p>
-              The market is full of opportunities—are you ready to take them?
-            </p>
-          </div>
-
-          <a href="courses.html" class="btn">
-            GET STARTED NOW – CHOOSE YOUR PACKAGE!</a
-          >
-        </div>
-
-        <!-- FAQ 9 -->
-        <div class="faq-item">
-          <h3>How Do I Get Started?</h3>
-          <div class="faq-item-content">
-            <p>
-              Getting started is EASY—and the best part? You can choose the
-              offer that fits your exact trading level!
-            </p>
-            <p>
-              Whether you're a total beginner, an intermediate trader, or ready
-              to trade like a pro, we've structured our courses to meet you
-              exactly where you are.
-            </p>
-            <ul>
-              <li class="highlight">
-                New to Crypto Trading? – The Crypto Mastery Course ($299) gives
-                you the solid foundation you need to start trading with
-                confidence.
-              </li>
-              <li class="highlight">
-                Already Know the Basics? – The Advanced Crypto Mastery Course
-                ($399) will teach you pro-level strategies, smart money trading,
-                and advanced market insights.
-              </li>
-              <li class="highlight">
-                Want the Full VIP Experience? – The All-in-One VIP Package
-                ($499) gives you everything —beginner to advanced training,
-                real-time market insights, 1-on-1 mentorship, and VIP Telegram
-                access!
-              </li>
-            </ul>
-            <p>
-              No matter where you are in your trading journey, there’s a course
-              designed specifically for YOU.
-            </p>
-            <p>
-              Pick the path that matches your level, get instant access, and
-              start trading smarter TODAY!
-            </p>
-          </div>
-
-          <a href="courses.html" class="btn">
-            CHOOSE YOUR PACKAGE &amp; START WINNING NOW!</a
-          >
-        </div>
-      </div>
-    </section>
-
+      </section>
+    </main>
     <!-- Footer -->
     <footer>
       <div class="container">

@@ -11,6 +11,8 @@
     />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/resources.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -25,6 +27,7 @@
         <nav class="nav-links">
           <a href="resources.html">Resources</a>
           <a href="faqs.html">FAQs</a>
+          <a href="learn.html">Crypto Foundation</a>
           <a href="started.html">Get Started Now</a>
         </nav>
         <nav id="nav-burger" class="nav-burger">
@@ -37,177 +40,266 @@
             <a href="started.html">Get Started Now</a>
             <a href="resources.html">Resources</a>
             <a href="faqs.html">FAQs</a>
+            <a href="learn.html">Crypto Foundation</a>
           </div>
         </nav>
       </div>
     </header>
+    <main class="resources-root">
+      <!-- Resources Section -->
+      <section class="resources-section container">
+        <h1>Essential crypto trading resources</h1>
+        <p class="resources-subtitle">
+          Discover key tools, guides, and insights to navigate the world of
+          crypto trading with confidence.
+        </p>
+        <div class="resources-list">
+          <div class="resources-grid">
+            <!-- Market Data & Price Tracking -->
+            <div class="resource-category">
+              <h2>Market data &amp; price tracking</h2>
+              <ul>
+                <li>
+                  <a href="https://coinmarketcap.com" target="_blank"
+                    >CoinMarketCap</a
+                  >
+                  <span>
+                    – Real-time prices, market caps, trading volumes, and
+                    rankings.
+                  </span>
+                </li>
+                <li>
+                  <a href="https://www.coingecko.com" target="_blank">
+                    CoinGecko</a
+                  >
+                  <span>
+                    – Comprehensive market tracking with fundamental insights.
+                  </span>
+                </li>
+                <li>
+                  <a href="https://www.cryptocompare.com" target="_blank">
+                    CryptoCompare</a
+                  >
+                  <span>
+                    – Real-time data, portfolio tracking, and analysis.
+                  </span>
+                </li>
+              </ul>
+            </div>
 
-    <!-- Resources Section -->
-    <section class="resources-section">
-      <div class="container">
-        <h1>Essential Crypto Trading Resources</h1>
-        <div class="resources-grid">
-          <!-- Market Data & Price Tracking -->
-          <div class="resource-category">
-            <h3>Market Data &amp;Price Tracking</h3>
-            <ul>
-              <li>
-                <a href="https://coinmarketcap.com" target="_blank"
-                  >CoinMarketCap</a
-                >
-                – Real-time prices, market caps, trading volumes, and rankings.
-              </li>
-              <li>
-                <a href="https://www.coingecko.com" target="_blank">
-                  CoinGecko</a
-                >
-                > – Comprehensive market tracking with fundamental insights.
-              </li>
-              <li>
-                <a href="https://www.cryptocompare.com" target="_blank">
-                  CryptoCompare</a
-                >
-                – Real-time data, portfolio tracking, and analysis.
-              </li>
-            </ul>
-          </div>
+            <!-- Charting & Technical Analysis -->
+            <div class="resource-category">
+              <h2>Charting &amp; technical analysis</h2>
+              <ul>
+                <li>
+                  <a href="https://www.tradingview.com" target="_blank">
+                    TradingView</a
+                  >
+                  <span>
+                    – Professional-grade charting with indicators and analysis
+                    tools.
+                  </span>
+                </li>
+                <li>
+                  <a href="https://cryptoquant.com" target="_blank">
+                    CryptoQuant</a
+                  >
+                  <span> – On-chain data &amp; market analytics. </span>
+                </li>
+                <li>
+                  <a href="https://glassnode.com" target="_blank"> Glassnode</a>
+                  <span>
+                    – On-chain metrics, market intelligence, and deep analytics
+                    for Bitcoin, Ethereum, and altcoins.
+                  </span>
+                </li>
+              </ul>
+            </div>
 
-          <!-- Charting & Technical Analysis -->
-          <div class="resource-category">
-            <h3>Charting &amp; Technical Analysis</h3>
-            <ul>
-              <li>
-                <a href="https://www.tradingview.com" target="_blank">
-                  TradingView</a
-                >
-                – Professional-grade charting with indicators and analysis
-                tools.
-              </li>
-              <li>
-                <a href="https://cryptoquant.com" target="_blank">
-                  CryptoQuant</a
-                >
-                – On-chain data &amp; market analytics.
-              </li>
-              <li>
-                <a href="https://glassnode.com" target="_blank"> Glassnode</a>
-                – On-chain metrics, market intelligence, and deep analytics for
-                Bitcoin, Ethereum, and altcoins.
-              </li>
-            </ul>
-          </div>
+            <!-- News & Market Sentiment -->
+            <div class="resource-category">
+              <h2>News &amp; market sentiment</h2>
+              <ul>
+                <li>
+                  <a href="https://www.coindesk.com" target="_blank"
+                    >CoinDesk</a
+                  >
+                  <span>
+                    – The latest crypto news, research, and industry trends.
+                  </span>
+                </li>
+                <li>
+                  <a href="https://www.theblock.co" target="_blank"
+                    >The Block</a
+                  >
+                  <span> – Institutional-grade crypto news and insights. </span>
+                </li>
+                <li>
+                  <a href="https://decrypt.co" target="_blank"> Decrypt</a
+                  ><span> </span> – Easy-to-digest crypto news &amp; educational
+                  content.
+                </li>
+                <li>
+                  <a href="https://cryptopanic.com" target="_blank">
+                    CryptoPanic</a
+                  >
+                  – Aggregated news and social media sentiment analysis.
+                </li>
+              </ul>
+            </div>
 
-          <!-- News & Market Sentiment -->
-          <div class="resource-category">
-            <h3>News &amp; Market Sentiment</h3>
-            <ul>
-              <li>
-                <a href="https://www.coindesk.com" target="_blank">CoinDesk</a>
-                – The latest crypto news, research, and industry trends.
-              </li>
-              <li>
-                <a href="https://www.theblock.co" target="_blank">The Block</a>
-                – Institutional-grade crypto news and insights.
-              </li>
-              <li>
-                <a href="https://decrypt.co" target="_blank"> Decrypt</a> –
-                Easy-to-digest crypto news &amp; educational content.
-              </li>
-              <li>
-                <a href="https://cryptopanic.com" target="_blank">
-                  CryptoPanic</a
-                >
-                – Aggregated news and social media sentiment analysis.
-              </li>
-            </ul>
-          </div>
+            <!-- Trading & Derivatives Platforms -->
+            <div class="resource-category">
+              <h2>Trading &amp; derivatives platforms</h2>
+              <ul>
+                <li>
+                  <a href="https://www.binance.com" target="_blank"> Binance</a>
+                  <span>
+                    – The world’s largest crypto exchange with advanced trading
+                    features.
+                  </span>
+                </li>
+                <li>
+                  <a href="https://www.bybit.com" target="_blank"> Bybit</a
+                  ><span> </span> – Derivatives trading platform for futures and
+                  options.
+                </li>
+                <li>
+                  <a href="https://ftx.com" target="_blank"> FTX</a
+                  ><span>
+                    – Crypto exchange with spot and derivatives trading.
+                  </span>
+                </li>
+                <li>
+                  <a href="https://www.kraken.com" target="_blank"> Kraken</a> –
+                  <span> A secure exchange for spot and futures trading. </span>
+                </li>
+              </ul>
+            </div>
 
-          <!-- Trading & Derivatives Platforms -->
-          <div class="resource-category">
-            <h3>Trading &amp; Derivatives Platforms</h3>
-            <ul>
-              <li>
-                <a href="https://www.binance.com" target="_blank"> Binance</a>
-                – The world’s largest crypto exchange with advanced trading
-                features.
-              </li>
-              <li>
-                <a href="https://www.bybit.com" target="_blank"> Bybit</a> –
-                Derivatives trading platform for futures and options.
-              </li>
-              <li>
-                <a href="https://ftx.com" target="_blank"> FTX</a> – Crypto
-                exchange with spot and derivatives trading.
-              </li>
-              <li>
-                <a href="https://www.kraken.com" target="_blank"> Kraken</a> – A
-                secure exchange for spot and futures trading.
-              </li>
-            </ul>
-          </div>
+            <!-- On-Chain & Whale Watching Tools -->
+            <div class="resource-category">
+              <h2>On-chain &amp; whale watching tools</h2>
+              <ul>
+                <li>
+                  <a href="https://whale-alert.io" target="_blank"
+                    >Whale Alert</a
+                  >
+                  <span>
+                    – Tracks large crypto transactions and whale movements.
+                  </span>
+                </li>
+                <li>
+                  <a href="https://santiment.net" target="_blank">Santiment</a>
+                  <span>
+                    – Social and on-chain analytics for smarter trading.
+                  </span>
+                </li>
+                <li>
+                  <a href="https://messari.io" target="_blank"> Messari</a>
+                  <span>
+                    – In-depth crypto research and analytics platform.
+                  </span>
+                </li>
+              </ul>
+            </div>
 
-          <!-- On-Chain & Whale Watching Tools -->
-          <div class="resource-category">
-            <h3>On-Chain &amp; Whale Watching Tools</h3>
-            <ul>
-              <li>
-                <a href="https://whale-alert.io" target="_blank">Whale Alert</a>
-                – Tracks large crypto transactions and whale movements.
-              </li>
-              <li>
-                <a href="https://santiment.net" target="_blank">Santiment</a>
-                – Social and on-chain analytics for smarter trading.
-              </li>
-              <li>
-                <a href="https://messari.io" target="_blank"> Messari</a> –
-                In-depth crypto research and analytics platform.
-              </li>
-            </ul>
-          </div>
+            <!-- Blockchain Explorers -->
+            <div class="resource-category">
+              <h2>Blockchain explorers</h2>
+              <ul>
+                <li>
+                  <a href="https://etherscan.io" target="_blank"> Etherscan</a>
+                  <span>
+                    – Ethereum blockchain explorer for tracking transactions.
+                  </span>
+                </li>
+                <li>
+                  <a href="https://www.blockchain.com" target="_blank">
+                    Blockchain.com</a
+                  >
+                  <span>
+                    – Bitcoin &amp; multi-chain transaction explorer.
+                  </span>
+                </li>
+                <li>
+                  <a href="https://bscscan.com" target="_blank"> BscScan</a>
+                  <span> Binance Smart Chain explorer. </span> –
+                </li>
+              </ul>
+            </div>
 
-          <!-- Blockchain Explorers -->
-          <div class="resource-category">
-            <h3>Blockchain Explorers</h3>
-            <ul>
-              <li>
-                <a href="https://etherscan.io" target="_blank"> Etherscan</a>
-                – Ethereum blockchain explorer for tracking transactions.
-              </li>
-              <li>
-                <a href="https://www.blockchain.com" target="_blank">
-                  Blockchain.com</a
-                >
-                – Bitcoin &amp; multi-chain transaction explorer.
-              </li>
-              <li>
-                <a href="https://bscscan.com" target="_blank"> BscScan</a> –
-                Binance Smart Chain explorer.
-              </li>
-            </ul>
-          </div>
-
-          <!-- Risk Management & Portfolio Tracking -->
-          <div class="resource-category">
-            <h3>Risk Management &amp; Portfolio Tracking</h3>
-            <ul>
-              <li>
-                <a href="https://coinstats.app" target="_blank"> CoinStats</a>
-                – Track your portfolio across multiple exchanges &amp; wallets.
-              </li>
-              <li>
-                <a href="https://delta.app" target="_blank"> Delta</a> –
-                Portfolio tracking with real-time market updates.
-              </li>
-              <li>
-                <a href="https://zerion.io" target="_blank"> Zerion</a> – Manage
-                your DeFi assets in one place.
-              </li>
-            </ul>
+            <!-- Risk Management & Portfolio Tracking -->
+            <div class="resource-category">
+              s
+              <h2>Risk management &amp; portfolio tracking</h2>
+              <ul>
+                <li>
+                  <a href="https://coinstats.app" target="_blank"> CoinStats</a>
+                  <span>
+                    – Track your portfolio across multiple exchanges &amp;
+                    wallets.
+                  </span>
+                </li>
+                <li>
+                  <a href="https://delta.app" target="_blank"> Delta</a>
+                  <span>
+                    – Portfolio tracking with real-time market updates.
+                  </span>
+                </li>
+                <li>
+                  <a href="https://zerion.io" target="_blank"> Zerion</a>
+                  <span> – Manage your DeFi assets in one place. </span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+      <!-- Contact Us Section -->
+      <section id="contact-us" class="contact-us">
+        <div class="contact-us-content container">
+          <h2>Contact us – we’re here to help!</h2>
+          <p>
+            Have questions? Need assistance? Our team is ready to support you!
+          </p>
+          <p class="access-links">
+            <span>Reach out to us anytime:</span>
+
+            <svg
+              width="22"
+              height="16"
+              viewBox="0 0 22 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.75 2.75V13.25C20.75 13.6478 20.592 14.0294 20.3107 14.3107C20.0294 14.592 19.6478 14.75 19.25 14.75H2.75C2.35218 14.75 1.97064 14.592 1.68934 14.3107C1.40804 14.0294 1.25 13.6478 1.25 13.25V2.75M20.75 2.75C20.75 2.35218 20.592 1.97064 20.3107 1.68934C20.0294 1.40804 19.6478 1.25 19.25 1.25H2.75C2.35218 1.25 1.97064 1.40804 1.68934 1.68934C1.40804 1.97064 1.25 2.35218 1.25 2.75M20.75 2.75L11.8535 8.909C11.6027 9.08253 11.305 9.17549 11 9.17549C10.695 9.17549 10.3973 9.08253 10.1465 8.909L1.25 2.75"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <a href="#" class="telegramm">
+              <img
+                class="telegramm-img"
+                src="assets/icon/telegram_icon_48x48.png"
+              />
+            </a>
+          </p>
+          <p>
+            We value our students and are committed to providing top-tier
+            support!
+          </p>
+          <a href="#choose-path" class="btn"
+            >Get started now – join the winning trades!</a
+          >
+        </div>
+      </section>
+    </main>
     <!-- Footer -->
     <footer>
       <div class="container">

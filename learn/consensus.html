@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrimeEdge Academy - Crypto Trading Course</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="./styles/main-foundation.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <a class="logo" href="../index.html">
+          <img class="logo-icon" src="../assets/icon/logo-1-layer.png" /><span
+            >PrimeEdge Academy</span
+          >
+        </a>
+        <nav class="nav-links">
+          <a href="../resources.html">Resources</a>
+          <a href="../faqs.html">FAQs</a>
+          <a href="../learn.html">Crypto Foundation</a>
+          <a href="../started.html">Get Started Now</a>
+        </nav>
+        <nav id="nav-burger" class="nav-burger">
+          <button id="burger" class="burger" aria-label="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div id="burger-menu" class="burger-menu">
+            <a href="../started.html">Get Started Now</a>
+            <a href="../resources.html">Resources</a>
+            <a href="../faqs.html">FAQs</a>
+            <a href="../learn.html">Crypto Foundation</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="foundation-crypto-root">
+      <!-- Integration AI card -->
+      <section class="subheader">
+        <div class="container">
+          <div class="subheader">
+            <a href="../learn.html"
+              ><span>&#10094;</span><span>Crypto Foundation</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Page Heading -->
+      <h1 class="foundation-crypto-title">
+        Understanding proof of work (Pow), proof of stake (Pos) and other
+        consensus mechanisms
+      </h1>
+      <p class="foundation-crypto-subtitle">
+        Consensus mechanisms are the backbone of blockchain technology. They
+        determine how transactions are validated and how new blocks are added to
+        a blockchain. Different cryptocurrencies use different mechanisms, each
+        with its own advantages and trade-offs. This section will break down the
+        most famous consensus models, including Proof of Work (PoW), Proof of
+        Stake (PoS), and more.
+      </p>
+
+      <article class="section">
+        <div class="container">
+          <div class="foundation-layout">
+            <!-- Page content -->
+            <div class="foundation-content">
+              <!-- Consensus Section -->
+              <section id="consensus" class="consensus">
+                <h2 class="title-2">What is a Consensus Mechanism?</h2>
+                <p class="subtitle-2">
+                  <span>
+                    A consensus mechanism is a process used by blockchain
+                    networks to validate transactions and ensure that all copies
+                    of the blockchain remain identical and secure.
+                  </span>
+                  <span>
+                    Since blockchain is decentralized (no central authority
+                    controls it), these mechanisms allow a network of
+                    participants (nodes) to agree on which transactions are
+                    legitimate.
+                  </span>
+                </p>
+
+                <ul class="learn-path-list-2">
+                  <li class="start-flex">
+                    <span>&bull;</span>
+                    <span>
+                      <strong class="highlight"
+                        >Prevents fraud and double-spending.</strong
+                      >
+                    </span>
+                  </li>
+
+                  <li class="start-flex">
+                    <span>&bull;</span>
+                    <span>
+                      <strong class="highlight"
+                        >Ensures security and decentralization.</strong
+                      ></span
+                    >
+                  </li>
+                  <li class="start-flex">
+                    <span>&bull;</span>
+                    <span>
+                      <strong class="highlight"
+                        >Determines how new blocks and transactions are
+                        verified.</strong
+                      ></span
+                    >
+                  </li>
+                </ul>
+                <p class="subtitle-2 proof-example-text">
+                  Different blockchain networks use different consensus
+                  mechanisms based on
+                  <strong class="highlight"
+                    >scalability, security, and energy efficiency.</strong
+                  >
+                </p>
+              </section>
+
+              <!-- C Proof of Work Section -->
+              <section id="proof-work" class="consensus">
+                <h2 class="title-2">
+                  Proof of Work (PoW) – The Original Consensus Mechanism
+                </h2>
+
+                <ul class="learn-path-list-2">
+                  <li class="start-flex">
+                    <span>&bull;</span>
+                    <span>
+                      <strong class="highlight">Used By:</strong> Bitcoin (BTC),
+                      Litecoin (LTC), Dogecoin (DOGE), Monero (XMR)
+                    </span>
+                  </li>
+
+                  <li class="consensus-list-item">
+                    <p class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong class="highlight">How It Works:</strong></span
+                      >
+                    </p>
+                    <ul class="learn-path-list-3">
+                      <li class="start-flex">
+                        <span>&bull;</span>
+                        <span>
+                          Miners compete to solve complex mathematical puzzles
+                          using computing power.</span
+                        >
+                      </li>
+                      <li class="start-flex">
+                        <span>&bull;</span>
+                        <span>
+                          The first miner to solve the puzzle gets to validate
+                          the block and receives a block reward in
+                          cryptocurrency.</span
+                        >
+                      </li>
+                      <li class="start-flex">
+                        <span>&bull;</span>
+                        <span>
+                          <strong class="highlight"
+                            >This process is called mining.</strong
+                          ></span
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="consensus-list-item">
+                    <p class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong class="highlight">Advantages:</strong></span
+                      >
+                    </p>
+                    <ul class="learn-path-list-3">
+                      <li class="start-flex">
+                        <span>&#10003;</span>
+                        <span>
+                          <strong class="highlight"> Highly secure</strong>– The
+                          vast amount of computational power makes hacking
+                          extremely difficult.</span
+                        >
+                      </li>
+                      <li class="start-flex">
+                        <span>&#10003;</span>
+                        <span>
+                          <strong class="highlight">Decentralized</strong>–
+                          Anyone with computing power can participate.</span
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="consensus-list-item">
+                    <p class="start-flex">
+                      <span>&bull;</span>
+                      <span
+                        ><strong class="highlight">Disadvantages:</strong></span
+                      >
+                    </p>
+                    <ul class="learn-path-list-3">
+                      <li class="start-flex disadvantages">
+                        <span>&#10005;</span>
+                        <span>
+                          <strong class="highlight"> Energy-intensive</strong> –
+                          Requires significant electricity, making it
+                          environmentally controversial.</span
+                        >
+                      </li>
+                      <li class="start-flex disadvantages">
+                        <span>&#10005;</span>
+                        <span>
+                          <strong class="highlight">Slower transactions</strong>
+                          – Bitcoin processes about 7 transactions per second
+                          (TPS).</span
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <p class="subtitle-2 proof-example-text">
+                  <strong class="highlight">Example:</strong>
+                  Bitcoin miners use PoW to confirm transactions. The more
+                  computing power they have, the higher their chances of earning
+                  BTC rewards.
+                </p>
+              </section>
+
+              <!-- Proof of stake Section -->
+              <section id="proof-stake" class="consensus">
+                <h2 class="title-2">
+                  Proof of stake (PoS) – the energy-efficient alternative
+                </h2>
+
+                <ul class="learn-path-list-2">
+                  <li class="start-flex">
+                    <span>&bull;</span>
+                    <span>
+                      <strong class="highlight">Used By:</strong> Ethereum
+                      (ETH), Cardano (ADA), Solana (SOL), Polkadot (DOT)
+                    </span>
+                  </li>
+
+                  <li class="consensus-list-item">
+                    <p class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong class="highlight">How It Works:</strong></span
+                      >
+                    </p>
+                    <ul class="learn-path-list-3">
+                      <li class="start-flex">
+                        <span>&bull;</span>
+                        <span>
+                          Instead of mining, participants "stake" their crypto
+                          to validate transactions.</span
+                        >
+                      </li>
+                      <li class="start-flex">
+                        <span>&bull;</span>
+                        <span>
+                          Validators are randomly chosen to approve transactions
+                          based on the amount of cryptocurrency they hold and
+                          stake.</span
+                        >
+                      </li>
+                      <li class="start-flex">
+                        <span>&bull;</span>
+                        <span>
+                          <strong class="highlight"
+                            >The more crypto staked, the higher the chance of
+                            being selected to validate blocks and earn
+                            rewards.</strong
+                          ></span
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="consensus-list-item">
+                    <p class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong class="highlight">Advantages:</strong></span
+                      >
+                    </p>
+                    <ul class="learn-path-list-3">
+                      <li class="start-flex">
+                        <span>&#10003;</span>
+                        <span>
+                          <strong class="highlight"> Energy-efficient</strong> –
+                          No need for expensive mining equipment.</span
+                        >
+                      </li>
+                      <li class="start-flex">
+                        <span>&#10003;</span>
+                        <span>
+                          <strong class="highlight"
+                            >Faster transaction speeds</strong
+                          >
+                          – Ethereum’s shift to PoS increased scalability.</span
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="consensus-list-item">
+                    <p class="start-flex">
+                      <span>&bull;</span>
+                      <span
+                        ><strong class="highlight">Disadvantages:</strong></span
+                      >
+                    </p>
+                    <ul class="learn-path-list-3">
+                      <li class="start-flex disadvantages">
+                        <span>&#10005;</span>
+                        <span>
+                          <strong class="highlight"
+                            >Wealth Concentration</strong
+                          >
+                          – The more coins you hold, the more power you have in
+                          validating transactions.</span
+                        >
+                      </li>
+                      <li class="start-flex disadvantages">
+                        <span>&#10005;</span>
+                        <span>
+                          <strong class="highlight">Security Concerns</strong>
+                          – While PoS is secure, some argue it’s more vulnerable
+                          to attacks than PoW.</span
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <p class="subtitle-2 proof-example-text">
+                  <strong class="highlight">Example:</strong>
+                  Ethereum transitioned from PoW to PoS in 2022 with The Merge,
+                  reducing energy consumption by over 99%.
+                </p>
+              </section>
+
+              <!-- Delegated proof of stake Section -->
+              <section id="delegated-proof" class="consensus">
+                <h2 class="title-2">
+                  Delegated proof of stake (DPoS) – a more democratic approach
+                </h2>
+
+                <ul class="learn-path-list-2">
+                  <li class="start-flex">
+                    <span>&bull;</span>
+                    <span>
+                      <strong class="highlight">Used By:</strong> Binance Smart
+                      Chain (BNB), TRON (TRX), EOS (EOS)
+                    </span>
+                  </li>
+
+                  <li class="consensus-list-item">
+                    <p class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong class="highlight">How It Works:</strong></span
+                      >
+                    </p>
+                    <ul class="learn-path-list-3">
+                      <li class="start-flex">
+                        <span>&bull;</span>
+                        <span>
+                          Instead of random selection, PoS participants vote for
+                          delegates to validate transactions on their
+                          behalf.</span
+                        >
+                      </li>
+                      <li class="start-flex">
+                        <span>&bull;</span>
+                        <span>
+                          These delegates (validators) rotate periodically,
+                          ensuring fair representation.</span
+                        >
+                      </li>
+                      <li class="start-flex">
+                        <span>&bull;</span>
+                        <span>
+                          Rewards are shared among voters, making staking more
+                          inclusive.</span
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="consensus-list-item">
+                    <p class="start-flex">
+                      <span>&bull;</span>
+                      <span
+                        ><strong class="highlight"> Advantages:</strong></span
+                      >
+                    </p>
+                    <ul class="learn-path-list-3">
+                      <li class="start-flex">
+                        <span>&#10003;</span>
+                        <span>
+                          <strong class="highlight"
+                            >More decentralized than traditional PoS.</strong
+                          >
+                        </span>
+                      </li>
+                      <li class="start-flex">
+                        <span>&#10003;</span>
+                        <span>
+                          <strong class="highlight"
+                            >Faster transaction speeds.</strong
+                          ></span
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="consensus-list-item">
+                    <p class="start-flex">
+                      <span>&bull;</span>
+                      <span
+                        ><strong class="highlight">
+                          Disadvantages:</strong
+                        ></span
+                      >
+                    </p>
+                    <ul class="learn-path-list-3">
+                      <li class="start-flex disadvantages">
+                        <span>&#10005;</span>
+                        <span>
+                          <strong class="highlight"
+                            >Not as decentralized as PoW</strong
+                          >
+                          – A small number of delegates hold most of the
+                          power.</span
+                        >
+                      </li>
+                      <li class="start-flex disadvantages">
+                        <span>&#10005;</span>
+                        <span>
+                          <strong class="highlight"
+                            >Potential for collusion among validators.</strong
+                          >
+                        </span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <p class="subtitle-2 proof-example-text">
+                  <strong class="highlight">Example:</strong>
+                  Binance Smart Chain (BNB) uses DPoS, allowing users to vote
+                  for validators and participate in governance.
+                </p>
+              </section>
+
+              <!-- Proof of authority Section -->
+              <section id="proof-authority" class="consensus">
+                <h2 class="title-2">
+                  Proof of authority (PoA) – used for private blockchains
+                </h2>
+
+                <ul class="learn-path-list-2">
+                  <li class="start-flex">
+                    <span>&bull;</span>
+                    <span>
+                      <strong class="highlight">Used By:</strong> VeChain (VET),
+                      some enterprise blockchain solutions
+                    </span>
+                  </li>
+
+                  <li class="consensus-list-item">
+                    <p class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong class="highlight">How It Works:</strong></span
+                      >
+                    </p>
+                    <ul class="learn-path-list-3">
+                      <li class="start-flex">
+                        <span>&bull;</span>
+                        <span>
+                          Transactions are validated by pre-approved nodes
+                          (often companies or trusted institutions).</span
+                        >
+                      </li>
+                      <li class="start-flex">
+                        <span>&bull;</span>
+                        <span>
+                          Validators are known entities, reducing the need for
+                          complex mining or staking systems.</span
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="consensus-list-item">
+                    <p class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong class="highlight"> Advantages:</strong></span
+                      >
+                    </p>
+                    <ul class="learn-path-list-3">
+                      <li class="start-flex">
+                        <span>&#10003;</span>
+                        <span>
+                          <strong class="highlight"
+                            >Extremely fast transactions.</strong
+                          >
+                        </span>
+                      </li>
+                      <li class="start-flex">
+                        <span>&#10003;</span>
+                        <span>
+                          <strong class="highlight"
+                            >Low energy consumption.</strong
+                          ></span
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="consensus-list-item">
+                    <p class="start-flex">
+                      <span>&bull;</span>
+                      <span
+                        ><strong class="highlight">
+                          Disadvantages:</strong
+                        ></span
+                      >
+                    </p>
+                    <ul class="learn-path-list-3">
+                      <li class="start-flex disadvantages">
+                        <span>&#10005;</span>
+                        <span>
+                          <strong class="highlight">Centralized</strong>
+                          – Control is limited to a small group of trusted
+                          validators.</span
+                        >
+                      </li>
+                      <li class="start-flex disadvantages">
+                        <span>&#10005;</span>
+                        <span>
+                          <strong class="highlight"
+                            >Not censorship-resistant</strong
+                          >
+                          – Unlike Bitcoin, governments or companies can shut it
+                          down
+                        </span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <p class="subtitle-2 proof-example-text">
+                  <strong class="highlight">Example:</strong>
+                  VeChain uses PoA to power supply chain tracking solutions for
+                  major companies like Walmart and BMW.
+                </p>
+              </section>
+
+              <!-- Proof of burn Section -->
+              <section id="proof-burn" class="consensus">
+                <h2 class="title-2">
+                  Proof of burn (PoB) – destroying coins to secure the network
+                </h2>
+
+                <ul class="learn-path-list-2">
+                  <li class="start-flex">
+                    <span>&bull;</span>
+                    <span>
+                      <strong class="highlight">Used By:</strong> Slimcoin
+                      (SLM), some experimental blockchains
+                    </span>
+                  </li>
+
+                  <li class="consensus-list-item">
+                    <p class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong class="highlight">How It Works:</strong></span
+                      >
+                    </p>
+                    <ul class="learn-path-list-3">
+                      <li class="start-flex">
+                        <span>&bull;</span>
+                        <span>
+                          Participants "burn" (destroy) coins by sending them to
+                          an unusable address.</span
+                        >
+                      </li>
+                      <li class="start-flex">
+                        <span>&bull;</span>
+                        <span>
+                          he more coins burned, the higher the chance of
+                          becoming a validator.</span
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="consensus-list-item">
+                    <p class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong class="highlight"> Advantages:</strong></span
+                      >
+                    </p>
+                    <ul class="learn-path-list-3">
+                      <li class="start-flex">
+                        <span>&#10003;</span>
+                        <span>
+                          <strong class="highlight"
+                            >Encourages scarcity, potentially increasing
+                            value.</strong
+                          >
+                        </span>
+                      </li>
+                      <li class="start-flex">
+                        <span>&#10003;</span>
+                        <span>
+                          <strong class="highlight"
+                            >Doesn’t require energy-consuming mining.</strong
+                          ></span
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="consensus-list-item">
+                    <p class="start-flex">
+                      <span>&bull;</span>
+                      <span
+                        ><strong class="highlight">
+                          Disadvantages:</strong
+                        ></span
+                      >
+                    </p>
+                    <ul class="learn-path-list-3">
+                      <li class="start-flex disadvantages">
+                        <span>&#10005;</span>
+                        <span>
+                          <strong class="highlight">Not widely adopted.</strong>
+                        </span>
+                      </li>
+                      <li class="start-flex disadvantages">
+                        <span>&#10005;</span>
+                        <span>
+                          <strong class="highlight"
+                            >Requires users to destroy their own assets.</strong
+                          >
+                        </span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <p class="subtitle-2 proof-example-text">
+                  <strong class="highlight">Example:</strong>
+                  Some projects use PoB as a way to reduce coin supply and
+                  create deflationary pressure.
+                </p>
+              </section>
+
+              <!-- Proof of space Section -->
+              <section id="proof-space" class="consensus">
+                <h2 class="title-2">
+                  Proof of space &amp; time – storage-based consensus
+                </h2>
+
+                <ul class="learn-path-list-2">
+                  <li class="start-flex">
+                    <span>&bull;</span>
+                    <span>
+                      <strong class="highlight">Used By:</strong> Chia Network
+                      (XCH)
+                    </span>
+                  </li>
+
+                  <li class="consensus-list-item">
+                    <p class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong class="highlight">How It Works:</strong></span
+                      >
+                    </p>
+                    <ul class="learn-path-list-3">
+                      <li class="start-flex">
+                        <span>&bull;</span>
+                        <span>
+                          nstead of using computational power (PoW) or staking
+                          (PoS), validators prove they have dedicated storage
+                          space on their hard drives.</span
+                        >
+                      </li>
+                      <li class="start-flex">
+                        <span>&bull;</span>
+                        <span>
+                          The more space you dedicate, the higher the chance of
+                          earning rewards.</span
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="consensus-list-item">
+                    <p class="start-flex">
+                      <span>&bull;</span>
+                      <span>
+                        <strong class="highlight">Advantages:</strong></span
+                      >
+                    </p>
+                    <ul class="learn-path-list-3">
+                      <li class="start-flex">
+                        <span>&#10003;</span>
+                        <span>
+                          <strong class="highlight"
+                            >Energy-efficient alternative to PoW.</strong
+                          >
+                        </span>
+                      </li>
+                      <li class="start-flex">
+                        <span>&#10003;</span>
+                        <span>
+                          <strong class="highlight">
+                            Decentralized and secure.</strong
+                          ></span
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="consensus-list-item">
+                    <p class="start-flex">
+                      <span>&bull;</span>
+                      <span
+                        ><strong class="highlight">Disadvantages:</strong></span
+                      >
+                    </p>
+                    <ul class="learn-path-list-3">
+                      <li class="start-flex disadvantages">
+                        <span>&#10005;</span>
+                        <span>
+                          <strong class="highlight"
+                            >Requires large amounts of storage hardware.</strong
+                          >
+                        </span>
+                      </li>
+                      <li class="start-flex disadvantages">
+                        <span>&#10005;</span>
+                        <span>
+                          <strong class="highlight"
+                            >Still not widely adopted.</strong
+                          >
+                        </span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <p class="subtitle-2 proof-example-text">
+                  <strong class="highlight">Example:</strong>
+                  Chia Network markets itself as a "green blockchain," using
+                  hard drive space instead of mining power.
+                </p>
+              </section>
+
+              <!-- Final thoughts Section -->
+              <section id="finale" class="consensus">
+                <h2 class="title-2">
+                  Final thoughts - wich consensus mechanism is best?
+                </h2>
+                <p class="subtitle-2">
+                  Each consensus mechanism serves different purposes in the
+                  blockchain ecosystem:
+                </p>
+                <ul class="consensus-conclusion-list">
+                  <li>
+                    For security &amp; decentralization? → Proof of work
+                    (Bitcoin, Litecoin)
+                  </li>
+                  <li>
+                    For scalability &amp; efficiency? → Proof of stake
+                    (Ethereum, Cardano, Solana)
+                  </li>
+                  <li>
+                    For democratic governance? → Delegated Proof of stake (BNB,
+                    TRON, EOS)
+                  </li>
+                  <li>
+                    For eco-friendly solutions? → Proof of space (Chia Network)
+                  </li>
+                </ul>
+                <p class="subtitle-2">
+                  <span>
+                    Consensus mechanisms are constantly evolving, with newer
+                    blockchain projects experimenting with hybrid models that
+                    combine the best features of multiple systems.
+                  </span>
+                  <span
+                    >Understanding how these mechanisms work helps traders,
+                    investors, and developers navigate the crypto industry more
+                    effectively.</span
+                  >
+                </p>
+              </section>
+            </div>
+
+            <!-- Sidebar-->
+            <aside class="foundation-sidebar">
+              <div class="foundation-sidebar-content">
+                <ul class="foundation-sidebar-list">
+                  <li class="foundation-sidebar-item">
+                    <a href="#consensus">What is a Consensus Mechanism</a>
+                  </li>
+                  <li class="foundation-sidebar-item">
+                    <a href="#proof-work">Proof of Work (PoW)</a>
+                  </li>
+                  <li class="foundation-sidebar-item">
+                    <a href="#proof-stake">Proof of stake (PoS)</a>
+                  </li>
+                  <li class="foundation-sidebar-item">
+                    <a href="#delegated-proof"
+                      >Delegated proof of stake (DPoS)</a
+                    >
+                  </li>
+                  <li class="foundation-sidebar-item">
+                    <a href="#proof-authority">Proof of authority (PoA)</a>
+                  </li>
+                  <li class="foundation-sidebar-item">
+                    <a href="#proof-burn">Proof of burn (PoB)</a>
+                  </li>
+                  <li class="foundation-sidebar-item">
+                    <a href="#proof-space">Proof of space &amp; time</a>
+                  </li>
+                  <li class="foundation-sidebar-item">
+                    <a href="#finale"
+                      >Final thoughts about consensus mechanisms</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </article>
+      <!-- Contact Us Section -->
+      <section id="contact-us" class="contact-us">
+        <div class="contact-us-content container">
+          <h2>Contact us – we’re here to help!</h2>
+          <p>
+            Have questions? Need assistance? Our team is ready to support you!
+          </p>
+          <p class="access-links">
+            <span>Reach out to us anytime:</span>
+
+            <svg
+              width="22"
+              height="16"
+              viewBox="0 0 22 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.75 2.75V13.25C20.75 13.6478 20.592 14.0294 20.3107 14.3107C20.0294 14.592 19.6478 14.75 19.25 14.75H2.75C2.35218 14.75 1.97064 14.592 1.68934 14.3107C1.40804 14.0294 1.25 13.6478 1.25 13.25V2.75M20.75 2.75C20.75 2.35218 20.592 1.97064 20.3107 1.68934C20.0294 1.40804 19.6478 1.25 19.25 1.25H2.75C2.35218 1.25 1.97064 1.40804 1.68934 1.68934C1.40804 1.97064 1.25 2.35218 1.25 2.75M20.75 2.75L11.8535 8.909C11.6027 9.08253 11.305 9.17549 11 9.17549C10.695 9.17549 10.3973 9.08253 10.1465 8.909L1.25 2.75"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <a href="#" class="telegramm">
+              <img
+                class="telegramm-img"
+                src="../assets/icon/telegram_icon_48x48.png"
+              />
+            </a>
+          </p>
+          <p>
+            We value our students and are committed to providing top-tier
+            support!
+          </p>
+          <a href="#choose-path" class="btn"
+            >Get started now – join the winning trades!</a
+          >
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 PrimeEdge Academy. All rights reserved.</p>
+        <p>
+          <a href="#">Terms &amp; Conditions</a> | <a href="#">Disclaimer</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

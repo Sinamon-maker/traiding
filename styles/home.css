@@ -1,94 +1,202 @@
 /* Hero Section with Background Image */
+.root {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* hero-secrets Section */
+
 .hero-secrets {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
-}
-
-.hero-secrets .container {
-  position: relative;
-  z-index: 1;
-}
-.hero-secrets-text {
-  background-color: rgb(0, 18, 118);
-  padding: 20px;
-  color: #fff; /* White text */
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 15px;
-}
-
-.hero-secrets h1 {
-  margin-bottom: 20px;
-  color: #fff; /* White for headline */
-}
-
-.hero-secrets p {
-  font-size: 1.8rem;
-  color: #fff;
-}
-
-.hero-secrets .btn {
-  margin-top: 20px;
-  align-self: center;
-}
-
-.hero-section-images {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  height: 1200px;
-}
-.hero-image-item {
-  width: 100%;
+  height: 400px;
+  background-image: url("../assets/images/3d-abstract-cyber-particles-background-with-flowing-dots.jpg");
   background-size: cover;
   background-position: center;
+
+  padding: 40px;
+}
+.secrets-text-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.secrets-text {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+}
+
+.hero-secrets-slogan {
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffff;
+}
+.hero-secrets-subtitle {
+  text-align: center;
+  color: #ffff;
+}
+@media (min-width: 768px) {
+  .hero-secrets {
+    height: 400px;
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+
+  .secrets-text-content {
+    width: 600px;
+  }
+
+  .hero-secrets-slogan {
+    text-align: left;
+    font-size: 40px;
+  }
+  .hero-secrets-subtitle {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-secrets {
+    height: 500px;
+    padding-left: 60px;
+  }
+  .secrets-text-content {
+    width: 800px;
+  }
+  .hero-secrets-slogan {
+    font-size: 7.2rem;
+  }
+}
+/* Geading Section */
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading-heading {
+  margin-bottom: 20px;
+}
+.heading-subtitle {
+  text-align: center;
+  max-width: 90%;
+}
+
+/* secrets-persons Section */
+
+.secrets-persons-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  height: 1200px;
+}
+.secrets-image-item {
+  width: 80%;
   height: 33.3%;
 }
-
-.hero-image-item-1 {
-  background-image: url("../assets/images/persons/512px-Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit.jpg");
-}
-
-.hero-image-item-2 {
-  background-image: url("../assets/images/persons/256px-Cathie_Wood_ARK_Invest_Photo.jpg");
-}
-
-.hero-image-item-3 {
-  background-image: url("../assets/images/persons/1024px-Michael_Saylor_Keynote_Address.jpg");
+.secrets-image-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
-  .hero-secrets {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-
-  .hero-secrets .text {
-    gap: 20px;
-    padding: 30px;
-  }
-
-  .hero-section-images {
-    flex-direction: row;
+  .secrets-persons-grid {
     width: 100%;
-    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+    height: 300px;
   }
-  .hero-image-item {
+
+  .secrets-image-item {
     width: 33.3%;
-    background-size: cover;
-    background-position: center;
     height: 100%;
   }
 }
+
 @media (min-width: 1200px) {
-  .hero-secrets .text {
-    padding: 40px;
+  .secrets-persons-grid {
+    height: 460px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .secrets-image-item {
+    width: 360px;
+    height: 400px;
+  }
+}
+
+.about {
+  height: 300px;
+  display: flex;
+}
+
+.about-content {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-img {
+  display: none;
+}
+.about-subtitle {
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-img {
+  display: none;
+}
+.about-img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .about {
+    height: 460px;
+  }
+  .about-content {
+    width: 50%;
+  }
+  .about h2 {
+    text-align: left;
+  }
+  .about-content a {
+    align-self: flex-start;
+  }
+  .about-img {
+    display: block;
+    width: 50%;
+    height: 100%;
+  }
+  .about-subtitle {
+    text-align: left;
   }
 }
