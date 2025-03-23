@@ -233,10 +233,14 @@
   color: var(--text-color-light);
 }
 .trust-hero-text p {
-  max-width: 80%;
+  max-width: 100%;
   color: var(--text-color-light);
   font-size: 1.6rem;
   line-height: 1.65;
+}
+
+.trust-hero-text .btn {
+  width: 100%;
 }
 
 .trust-hero-content {
@@ -311,8 +315,13 @@
   }
 
   .trust-hero-text p {
+    max-width: 90%;
     font-size: 2rem;
     line-height: 1.5;
+  }
+
+  .trust-hero-text .btn {
+    width: fit-content;
   }
 
   .trust-hero-item {
